@@ -7,6 +7,40 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
+    },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    purchasePrice: {
+      type: DataTypes.REAL,
+      allowNull: false,
+      validate: {
+        min: 0,
+      },
+    },
+    price: {
+      type: DataTypes.REAL,
+      allowNull: false,
+      validate: {
+        min: 0,
+      },
+    },
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        min: 0,
+      },
+    },
+    discount: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
+      validate: {
+        min: 0,
+        max: 100,
+      },
     },
   });
 };
