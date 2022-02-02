@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export const AppStyled = styled.div``;
+export const AppSc = styled.div``;
