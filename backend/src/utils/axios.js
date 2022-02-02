@@ -1,4 +1,5 @@
 const axios = require("axios");
+axios.default.baseURL = process.env.baseURL;
 
 module.exports = {
   axiosGet: async function (url) {
