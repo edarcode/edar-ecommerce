@@ -8,7 +8,6 @@ module.exports = (sequelize) => {
     {
       url: {
         type: DataTypes.STRING,
-        primaryKey: true,
         allowNull: false,
         validate: {
           isUrl: true,
