@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "name": "Samsung Galaxy International Vs",
+      "description": "Tres cámaras traseras: ultra gran angular, gran angular y teleobjetivo. Cámara delantera TrueDepth de 12mpx con modo retrato y control de profundidad. Graba y edita videos en 4K con gran nivel de detalle.",
+      "urls": [
+        "https://rubiktheme.com/demo/emarket_demo/97-home_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/emarket_demo/98-large_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/emarket_demo/99-large_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/emarket_demo/100-large_default/mug-the-best-is-yet-to-come.jpg"
+      ],
+      "suppliers": [1],
+      "categories": [2],
+      "price": 1000,
+      "purchasePrice": 500,
+      "stock": 5
+    },
+    {
+      "name": "Pc Torre Gamer Amd Ryzen 3 3200g Ssd 480gb Ram 16gb Mon 22",
+      "description": "PROCESADOR: RYZEN 3 3200G RELOJ DE AUMENTO MÁX. HASTA 4.0GHZ N.º DE NÚCLEOS DE CPU: 4. N.º DE SUBPROCESOS: 4.TARJETA DE VIDEO: VEGA 8 DE 2GB. N.º DE NÚCLEOS DE GPU: 8. MEMORIA RAM: 16GB PC DDR4 3000MHZ. BOARD PLACA : GIGABYTE GA-A320M-S2H. DISCO SOLIDO: SSD 480GB CONEXION SATA. MONITOR INCLUIDO :22 PULGADAS FULL HD (1920px X 1080px) ON HDMI & VGA. CAJA & CHASIS :MEDIA ATX METALICO (INCLUYE 1 VENTILADOR CON LUZ). FUENTE DE PODER: 780VA NORMAL. ACCESORIOS: KIT TECLADO Y MOUSE GAMER DE LUCES. SISTEMA OPERATIVO: WINDOWS 10.",
+      "urls": [
+        "https://http2.mlstatic.com/D_NQ_NP_962606-MCO45570808279_042021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_610026-MCO45570780764_042021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_725912-MCO45570763982_042021-O.webp"
+      ],
+      "suppliers": [1],
+      "categories": [1],
+      "price": 900,
+      "purchasePrice": 400,
+      "stock": 50
+    }
+  ]
+}
