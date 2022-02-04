@@ -1,3 +1,3 @@
 module.exports = {
-  suppliersPerPage: 10,
+  suppliersPerPage: 12,
 };
