@@ -19,12 +19,16 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require("./src/server.js");
 const { conn } = require("./src/db.js");
-const { loadMockCategories } = require("./src/utils/fillDatabase.js");
+const {
+  loadMockCategories,
+  loadMockSuppliers,
+} = require("./src/utils/fillDatabase.js");
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   server.listen(3001, async () => {
     await loadMockCategories();
+    await loadMockSuppliers();
     console.log("%s listening at 3001"); // eslint-disable-line no-console
   });
 });
