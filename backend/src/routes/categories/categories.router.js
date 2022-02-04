@@ -2,7 +2,7 @@ const { Router } = require("express");
 const deleteCategory = require("./deleteController/deleteCategory.controller");
 const getCategory = require("./getController/getCategories.controller");
 const createCategory = require("./postController/createCategory.controller");
-const updateCategory = require("./putController/updateCategory");
+const updateCategory = require("./putController/updateCategory.controller");
 const categories = Router();
 
 categories.route("/").post(createCategory);
