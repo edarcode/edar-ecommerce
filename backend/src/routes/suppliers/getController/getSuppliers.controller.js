@@ -1,5 +1,5 @@
 const { Supplier } = require("../../../db");
-const { suppliersPerPage } = require("../../../consts/pages");
+const { suppliersPerPage } = require("../../../consts/instancesPerPages");
 
 const getSuppliers = async (req, res, next) => {
   try {
