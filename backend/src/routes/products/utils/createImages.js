@@ -1,4 +1,4 @@
-const { Image } = require("../../../../db");
+const { Image } = require("../../../db");
 module.exports = {
   createImages: async (urls) => {
     const instanceImages = [];
