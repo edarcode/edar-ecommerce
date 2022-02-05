@@ -1,0 +1,153 @@
+{
+  "products": [
+    {
+      "name": "Samsung Galaxy International Vs",
+      "description": "Tres cámaras traseras: ultra gran angular, gran angular y teleobjetivo. Cámara delantera TrueDepth de 12mpx con modo retrato y control de profundidad. Graba y edita videos en 4K con gran nivel de detalle.",
+      "urls": [
+        "https://rubiktheme.com/demo/emarket_demo/97-home_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/emarket_demo/98-large_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/emarket_demo/99-large_default/mug-the-best-is-yet-to-come.jpg",
+        "https://rubiktheme.com/demo/emarket_demo/100-large_default/mug-the-best-is-yet-to-come.jpg"
+      ],
+      "suppliers": [1],
+      "categories": [2],
+      "price": 1000,
+      "purchasePrice": 500,
+      "stock": 5
+    },
+    {
+      "name": "Pc Torre Gamer Amd Ryzen 3 3200g Ssd 480gb Ram 16gb Mon 22",
+      "description": "PROCESADOR: RYZEN 3 3200G RELOJ DE AUMENTO MÁX. HASTA 4.0GHZ N.º DE NÚCLEOS DE CPU: 4. N.º DE SUBPROCESOS: 4.TARJETA DE VIDEO: VEGA 8 DE 2GB. N.º DE NÚCLEOS DE GPU: 8. MEMORIA RAM: 16GB PC DDR4 3000MHZ. BOARD PLACA : GIGABYTE GA-A320M-S2H. DISCO SOLIDO: SSD 480GB CONEXION SATA. MONITOR INCLUIDO :22 PULGADAS FULL HD (1920px X 1080px) ON HDMI & VGA. CAJA & CHASIS :MEDIA ATX METALICO (INCLUYE 1 VENTILADOR CON LUZ). FUENTE DE PODER: 780VA NORMAL. ACCESORIOS: KIT TECLADO Y MOUSE GAMER DE LUCES. SISTEMA OPERATIVO: WINDOWS 10.",
+      "urls": [
+        "https://http2.mlstatic.com/D_NQ_NP_962606-MCO45570808279_042021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_610026-MCO45570780764_042021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_725912-MCO45570763982_042021-O.webp"
+      ],
+      "suppliers": [1],
+      "categories": [1],
+      "price": 900,
+      "purchasePrice": 400,
+      "stock": 50
+    },
+    {
+      "name": "Xiaomi Pocophone Poco X3 Pro",
+      "description": "Tiene 4 cámaras traseras de 48Mpx/8Mpx/2Mpx/2Mpx.Cámara delantera de 20Mpx.Procesador Snapdragon 860 Octa-Core de 2.96GHz con 8GB de RAM.",
+      "urls": [
+        "https://http2.mlstatic.com/D_NQ_NP_792858-MLA48354116522_112021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_792858-MLA48354116522_112021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_847472-MLA48354170139_112021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_678022-MLA48354116462_112021-O.webp"
+      ],
+      "suppliers": [3],
+      "categories": [2],
+      "price": 400,
+      "purchasePrice": 300,
+      "stock": 100
+    },
+    {
+      "name": "Xiaomi Poco F3 5G",
+      "description": "Tiene 3 cámaras traseras de 48Mpx/8Mpx/5Mpx.Cámara delantera de 20Mpx.Procesador Snapdragon 870 Octa-Core de 3.2GHz con 8GB de RAM.",
+      "urls": [
+        "https://http2.mlstatic.com/D_NQ_NP_704731-MLA48493702902_122021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_704731-MLA48493702902_122021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_896297-MLA48493895191_122021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_749545-MLA48493878283_122021-O.webp"
+      ],
+      "suppliers": [3],
+      "categories": [2],
+      "price": 600,
+      "purchasePrice": 500,
+      "stock": 80
+    },
+    {
+      "name": "Libre Huawei Y9 Prime",
+      "description": "Cámara: 16 Mpx + 8Mpx +2Mpx con flash.Procesador: Huawei HiSilicon Kirin 710F.Memoria interna: 128GB / 4GB.",
+      "urls": [
+        "https://http2.mlstatic.com/D_NQ_NP_789307-MCO48599521472_122021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_789307-MCO48599521472_122021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_984992-MCO48599521474_122021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_938583-MCO48599521473_122021-O.webp"
+      ],
+      "suppliers": [4],
+      "categories": [2],
+      "price": 700,
+      "purchasePrice": 600,
+      "stock": 29
+    },
+    {
+      "name": "Apple iPhone SE ",
+      "description": "Cámara gran angular de 12 MP con modo Retrato, Iluminación de Retrato, Control de Profundidad, HDR Inteligente de última generación y video 4K.Chip A13 Bionic con Neural Engine de tercera generación.Pantalla Retina HD de 4,7 pulgadas.",
+      "urls": [
+        "https://http2.mlstatic.com/D_NQ_NP_782477-MLA47681019810_092021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_782477-MLA47681019810_092021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_919806-MLA47681019815_092021-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_620110-MLA47681043240_092021-O.webp"
+      ],
+      "suppliers": [5],
+      "categories": [2],
+      "price": 1000,
+      "purchasePrice": 900,
+      "stock": 9
+    },
+    {
+      "name": "Samsung Smart TV Neo QLED 65\" UHD 65QN90A",
+      "description": " Panel Neo QLED, Resolución 4K UHD de 3840 x 2160 píxeles, Procesador Neo Quantum 4K, Tecnología de imagen: Quantum HDR 32x / HDR 10+ / HLG, Sistema operativo Tizen, Navegador Smart Hub, Tecnología de sonido: Dolby Digital Plus, Decodificador de audio Dolby 5.1, Canales de sonido 4.2.2, Potencia de sonido de 60 watts, Asistente virtual: Bixby, Sintonizador digital: ISDBT, Conectividad: WiFi / Bluetooth / Ethernet, 4 Puertos HDMI / 2 Puertos USB, Incluye: One remote,QN65QN90AAGXPE",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/445334-750-750/Samsung-Smart-TV-Neo-QLED-65-UHD-65QN90A-1-205063655.jpg?v=637590290853230000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/445258-100-100/Samsung-Smart-TV-Neo-QLED-65-UHD-65QN90A-10-205063655.jpg?v=637590286714800000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/445259-100-100/Samsung-Smart-TV-Neo-QLED-65-UHD-65QN90A-11-205063655.jpg?v=637590286727130000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/445260-100-100/Samsung-Smart-TV-Neo-QLED-65-UHD-65QN90A-12-205063655.jpg?v=637590286739670000"
+      ],
+      "suppliers": [3],
+      "categories": [3],
+      "price": 2100,
+      "purchasePrice": 2000,
+      "stock": 40
+    },
+    {
+      "name": "Samsung Smart TV QLED 65\" UHD 65Q80A",
+      "description": " Panel QLED 4K, Resolución 4K UHD de 3840 x 2160 píxeles, Procesador Quantum Lite 4K, Tecnología de imagen: Quantum HDR 12x / HDR 10+ / HLG, Sistema operativo Tizen, Navegador Smart Hub, Calidad de sonido Dolby Digital Plus, Canales de sonido 2.2, Potencia de sonido de 60 watts, Sintonizador digital ISDBT, Conectividad: WiFi / Bluetooth / Ethernet, 4 Puertos HDMI / 2 Puertos USB, Incluye: One Remote,QN65Q80AAGXPE",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/457228-750-750/Samsung-Smart-TV-QLED-65-UHD-65Q80A-1-205063653.jpg?v=637620902167100000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/456923-100-100/Samsung-Smart-TV-QLED-65-UHD-65Q80A-2-205063653.jpg?v=637620864447400000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/456924-100-100/Samsung-Smart-TV-QLED-65-UHD-65Q80A-3-205063653.jpg?v=637620864451770000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/456925-100-100/Samsung-Smart-TV-QLED-65-UHD-65Q80A-4-205063653.jpg?v=637620864456000000"
+      ],
+      "suppliers": [3],
+      "categories": [3],
+      "price": 1800,
+      "purchasePrice": 1600,
+      "stock": 155
+    },
+    {
+      "name": "Televisor Smart TV 43\" FHD Hisense 43A4GSV VIDAA",
+      "description": "",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/510993-750-750/Televisor-Smart-TV-43-FHD-Hisense-43A4GSV-VIDAA-1-231710101.jpg?v=637776500101100000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/510986-100-100/Televisor-Smart-TV-43-FHD-Hisense-43A4GSV-VIDAA-2-231710101.jpg?v=637776492761370000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/510987-100-100/Televisor-Smart-TV-43-FHD-Hisense-43A4GSV-VIDAA-3-231710101.jpg?v=637776492765470000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/510988-100-100/Televisor-Smart-TV-43-FHD-Hisense-43A4GSV-VIDAA-4-231710101.jpg?v=637776494567900000"
+      ],
+      "suppliers": [3],
+      "categories": [3],
+      "price": 550,
+      "purchasePrice": 300,
+      "stock": 35
+    },
+    {
+      "name": "Micronics Parlantes 2.0 Rhapsody+ MIC-S315R Rojo",
+      "description": " Sistema Power Sound Portable 2.0, Control de volumen en línea, Parlantes: 2.5\" x 2, Alimentación de energía: Conexión USB, Conectividad: Jack 3.5 mm, Estructura en ABS, Medidas (Alt x Anch x Prof): 11.5 x 22 x 11.5 cm, Compatibilidad: Computadoras / TV / DVD / Smartphone / Tablet / Laptop / Equipos de sonido",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/439818-750-750/Micronics-Parlantes-2-0-Rhapsody-MIC-S315R-Rojo-1-195694381.jpg?v=637572281254770000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/440038-100-100/Micronics-Parlantes-2-0-Rhapsody-MIC-S315R-Rojo-2-195694381.jpg?v=637572288673530000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/440039-100-100/Micronics-Parlantes-2-0-Rhapsody-MIC-S315R-Rojo-3-195694381.jpg?v=637572288676170000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/440040-100-100/Micronics-Parlantes-2-0-Rhapsody-MIC-S315R-Rojo-4-195694381.jpg?v=637572288679130000"
+      ],
+      "suppliers": [2],
+      "categories": [4],
+      "price": 12,
+      "purchasePrice": 8,
+      "stock": 77
+    }
+  ]
+}
