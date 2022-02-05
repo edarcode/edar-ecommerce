@@ -15,6 +15,7 @@ const getProducts = async (req, res, next) => {
           model: Category,
           as: "categories",
           where: { id: idCategory },
+          attributes: [],
           through: { attributes: [] },
         },
       ],
