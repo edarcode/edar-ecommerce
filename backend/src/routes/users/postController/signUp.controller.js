@@ -1,7 +1,5 @@
 const { User } = require("../../../db");
 const { encryptPassword } = require("../../../utils/encryptPassword");
-const jwt = require("jsonwebtoken");
-const { SECRET } = process.env;
 
 const signUp = async (req, res, next) => {
   try {
@@ -13,8 +11,7 @@ const signUp = async (req, res, next) => {
     if (!created) {
       res.json({ msg: "Already exists" });
     } else {
-      const token = jwt.sign({ id: user.id }, SECRET, { expiresIn: 86400 });
-      res.json({ token });
+      res.json({ msg: "Created successfully" });
     }
   } catch (error) {
     next(error);
