@@ -4,7 +4,7 @@ const { include } = require("./utils/include");
 const { where } = require("./utils/where");
 
 const getProducts = async (req, res, next) => {
-  const { page = 0, name, idCategory, order, min, max } = req.body;
+  const { page = 0, name, idCategory, order, min, max } = req.query;
   try {
     const { count, rows } = await Product.findAndCountAll({
       where: where({ name, min, max, Op }),

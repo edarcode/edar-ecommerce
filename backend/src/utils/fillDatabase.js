@@ -1,7 +1,8 @@
 const { categories } = require("../mockups/categories.json");
 const { suppliers } = require("../mockups/suppliers.json");
 const { products } = require("../mockups/products.json");
-const { axiosPost } = require("./axios");
+const { axiosPost, axiosGetHeader } = require("./axios");
+const createSuperUser = require("./createSuperUser");
 const { baseURL } = process.env;
 
 module.exports = {
@@ -26,10 +27,17 @@ module.exports = {
     }
   },
   loadMockProducts: async function () {
+    const dataSuperUser = { email: "edar@gmail.com", password: "123" };
+    await createSuperUser(dataSuperUser);
     try {
+      await axiosPost(`${baseURL}/users/signup`, dataSuperUser);
+      const { token } = await axiosGetHeader(
+        `${baseURL}/users/signin`,
+        dataSuperUser
+      );
       for (let i = 0; i < products.length; i++) {
         const element = products[i];
-        await axiosPost(`${baseURL}/products`, element);
+        await axiosPost(`${baseURL}/products/admin`, { ...element, token });
       }
     } catch (error) {
       console.log(error);

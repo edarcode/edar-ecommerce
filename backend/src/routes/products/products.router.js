@@ -9,11 +9,13 @@ const createProduct = require("./postController/createProduct.controller");
 const updateProduct = require("./putController/updateProduct.controller");
 const products = Router();
 
+const middlewares = [tokenValidate, adminValidate];
+
 products.route("/:id").get(getDetailProduct);
 products.route("/").get(getProducts);
-products.route("/").post(createProduct);
-products.route("/").delete([tokenValidate, adminValidate], deleteProduct);
-products.route("/").put(updateProduct);
-products.route("/admin/:id").get(getDetailProductAdmin);
+products.route("/admin").post(middlewares, createProduct);
+products.route("/admin").delete(middlewares, deleteProduct);
+products.route("/admin").put(middlewares, updateProduct);
+products.route("/admin/:id").get(middlewares, getDetailProductAdmin);
 
 module.exports = products;
