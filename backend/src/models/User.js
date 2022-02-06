@@ -11,16 +11,9 @@ module.exports = (sequelize) => {
         validator: {
           isEmail: true,
         },
+        unique: false,
       },
       password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      firstName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      lastName: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -28,7 +21,7 @@ module.exports = (sequelize) => {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
       },
-      type: {
+      role: {
         type: DataTypes.ENUM("client", "admin"),
         defaultValue: "client",
       },
