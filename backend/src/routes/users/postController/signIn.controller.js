@@ -3,7 +3,7 @@ const { encryptPassword } = require("../../../utils/encryptPassword");
 const jwt = require("jsonwebtoken");
 const { SECRET } = process.env;
 
-const createUser = async (req, res, next) => {
+const signIn = async (req, res, next) => {
   try {
     const { email, password } = req.body;
     const [user, created] = await User.findOrCreate({
@@ -21,4 +21,4 @@ const createUser = async (req, res, next) => {
   }
 };
 
-module.exports = createUser;
+module.exports = signIn;
