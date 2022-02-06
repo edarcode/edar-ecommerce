@@ -15,17 +15,14 @@ module.exports = (sequelize) => {
       password: {
         type: DataTypes.STRING,
         allowNull: false,
-        get() {
-          return () => this.getDataValue("password");
-        },
       },
       firstName: {
         type: DataTypes.STRING,
-        // allowNull: false,
+        allowNull: false,
       },
       lastName: {
         type: DataTypes.STRING,
-        // allowNull: false,
+        allowNull: false,
       },
       state: {
         type: DataTypes.BOOLEAN,
