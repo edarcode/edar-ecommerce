@@ -11,7 +11,7 @@ module.exports = (sequelize) => {
         validator: {
           isEmail: true,
         },
-        unique: false,
+        unique: true,
       },
       password: {
         type: DataTypes.STRING,
