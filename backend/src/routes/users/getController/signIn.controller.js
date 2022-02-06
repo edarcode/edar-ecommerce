@@ -3,12 +3,12 @@ const { comparePassword } = require("../../../utils/comparePassword");
 const jwt = require("jsonwebtoken");
 const { SECRET } = process.env;
 
-const signUp = async (req, res, next) => {
+const signIn = async (req, res, next) => {
   try {
-    res.json({ msg: "signup" });
+    res.json({ msg: "signin" });
   } catch (error) {
     next(error);
   }
 };
 
-module.exports = signUp;
+module.exports = signIn;
