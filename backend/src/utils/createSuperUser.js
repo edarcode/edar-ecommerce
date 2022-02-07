@@ -1,9 +1,9 @@
 const { User } = require("../db");
 const { encryptPassword } = require("./encryptPassword");
 
-module.exports = async (data) => {
+module.exports = async (superUser) => {
   try {
-    const { email, password } = data;
+    const { email, password } = superUser;
     const [user, created] = await User.findOrCreate({
       where: { email },
       defaults: { password: await encryptPassword(password), role: "admin" },
