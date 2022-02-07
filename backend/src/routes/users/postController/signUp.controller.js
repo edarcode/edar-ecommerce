@@ -23,7 +23,7 @@ const signUp = async (req, res, next) => {
         //html: "<b>Hello world?</b>", // html body
       });
       res.json({
-        msg: "Created successfully, Please verify your email by clicking the link sent to your email",
+        msg: "Created successfully, please verify your email by clicking the link sent to your email",
       });
     }
   } catch (error) {
