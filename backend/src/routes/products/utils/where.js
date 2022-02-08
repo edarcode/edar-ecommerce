@@ -1,23 +1,23 @@
 module.exports = {
-  where: ({ name, min, max, Op }) => {
+  where: ({ name, min, max, Op, state }) => {
     if (min && max && name) {
       return {
         name: { [Op.iLike]: `%${name}%` },
         price: { [Op.between]: [min, max] },
-        state: true,
+        state: (state && state) || true,
       };
     } else if (min && max) {
       return {
         price: { [Op.between]: [min, max] },
-        state: true,
+        state: (state && state) || true,
       };
     } else if (name) {
       return {
         name: { [Op.iLike]: `%${name}%` },
-        state: true,
+        state: (state && state) || true,
       };
     } else {
-      return { state: true };
+      return { state: (state && state) || true };
     }
   },
 };
