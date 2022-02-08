@@ -4,14 +4,14 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define("Product", {
+    state: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: true,
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-    },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: false,
     },
     purchasePrice: {
       type: DataTypes.REAL,
@@ -42,9 +42,9 @@ module.exports = (sequelize) => {
         max: 100,
       },
     },
-    state: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
   });
 };
