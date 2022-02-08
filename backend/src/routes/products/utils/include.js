@@ -1,4 +1,4 @@
-const { Category, Image } = require("../../../../db");
+const { Category, Image } = require("../../../db");
 
 module.exports = {
   include: ({ idCategory }) => {

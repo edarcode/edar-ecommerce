@@ -14,6 +14,7 @@ const updateProduct = async (req, res, next) => {
       urls,
       suppliers,
       categories,
+      state,
     } = req.body;
     const product = await Product.findByPk(id);
     if (!product) {
@@ -26,6 +27,7 @@ const updateProduct = async (req, res, next) => {
         purchasePrice,
         stock,
         discount,
+        state,
       });
       await product.save();
       const images = await createImages(urls);

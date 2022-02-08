@@ -1,5 +1,6 @@
 const { User } = require("../../../db");
 const { encryptPassword } = require("../../../utils/encryptPassword");
+const { sendVerifyEmail } = require("../../../utils/sendVerifyEmail");
 
 const signUp = async (req, res, next) => {
   try {
@@ -9,9 +10,19 @@ const signUp = async (req, res, next) => {
       defaults: { password: await encryptPassword(password) },
     });
     if (!created) {
-      res.json({ msg: "Already exists" });
+      if (!user.verifyEmail) {
+        await sendVerifyEmail({ user, expiresIn: "150000" });
+        res.json({
+          msg: "Already had an account, please verify your email by clicking the link sent to your email",
+        });
+      } else {
+        res.json({ msg: "Already exists" });
+      }
     } else {
-      res.json({ msg: "Created successfully" });
+      await sendVerifyEmail({ user, expiresIn: "150000" });
+      res.json({
+        msg: "Created successfully, please verify your email by clicking the link sent to your email",
+      });
     }
   } catch (error) {
     next(error);
