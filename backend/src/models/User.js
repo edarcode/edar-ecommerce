@@ -4,6 +4,18 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   const User = sequelize.define("User", {
+    state: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: true,
+    },
+    verifyEmail: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
+    role: {
+      type: DataTypes.ENUM("client", "admin"),
+      defaultValue: "client",
+    },
     email: {
       type: DataTypes.STRING,
       validator: {
@@ -11,21 +23,9 @@ module.exports = (sequelize) => {
       },
       unique: true,
     },
-    verifyEmail: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false,
-    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    state: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
-    },
-    role: {
-      type: DataTypes.ENUM("client", "admin"),
-      defaultValue: "client",
     },
   });
 };
