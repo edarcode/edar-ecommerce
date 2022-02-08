@@ -12,7 +12,7 @@ module.exports = (sequelize) => {
       type: DataTypes.ENUM("pending", "done"),
       defaultValue: "pending",
     },
-    adress: {
+    address: {
       type: DataTypes.STRING,
       allowNull: false,
     },
