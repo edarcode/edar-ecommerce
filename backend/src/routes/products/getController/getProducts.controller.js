@@ -1,7 +1,7 @@
 const { productsPerPage } = require("../../../consts/instancesPerPages");
 const { Product, Op } = require("../../../db");
-const { include } = require("./utils/include");
-const { where } = require("./utils/where");
+const { include } = require("../utils/include");
+const { where } = require("../utils/where");
 
 const getProducts = async (req, res, next) => {
   const { page = 0, name, idCategory, order, min, max } = req.query;

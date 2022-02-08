@@ -6,7 +6,11 @@ module.exports = async (superUser) => {
     const { email, password } = superUser;
     const [user, created] = await User.findOrCreate({
       where: { email },
-      defaults: { password: await encryptPassword(password), role: "admin" },
+      defaults: {
+        password: await encryptPassword(password),
+        role: "admin",
+        verifyEmail: true,
+      },
     });
     return created;
   } catch (error) {
