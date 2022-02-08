@@ -13,7 +13,7 @@ const signUp = async (req, res, next) => {
       if (!user.verifyEmail) {
         await sendVerifyEmail({ user, expiresIn: "150000" });
         res.json({
-          msg: "Created successfully, please verify your email by clicking the link sent to your email",
+          msg: "Already had an account, please verify your email by clicking the link sent to your email",
         });
       } else {
         res.json({ msg: "Already exists" });
