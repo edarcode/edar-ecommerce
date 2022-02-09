@@ -31,9 +31,8 @@ module.exports = {
       email: SUPER_USER_EMAIL,
       password: SUPER_USER_PASSWORD,
     };
-    await createSuperUser(superUser);
     try {
-      await axiosPost(`${baseURL}/users/signup`, superUser);
+      await createSuperUser(superUser);
       const { token } = await axiosPost(`${baseURL}/users/signin`, superUser);
       for (let i = 0; i < products.length; i++) {
         const element = products[i];
