@@ -1,6 +1,7 @@
 const { categories } = require("../mockups/categories.json");
 const { suppliers } = require("../mockups/suppliers.json");
 const { products } = require("../mockups/products.json");
+const { bills } = require("../mockups/bills.json");
 const { axiosPost } = require("./axios");
 const createSuperUser = require("./createSuperUser");
 const { SUPER_USER_PASSWORD, SUPER_USER_EMAIL } = process.env;
@@ -49,6 +50,19 @@ module.exports = {
           url: "/products/admin",
           data,
           headers: { token },
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  loadMockBills: async function () {
+    try {
+      for (let i = 0; i < bills.length; i++) {
+        const data = bills[i];
+        await axiosPost({
+          url: "/bills",
+          data,
         });
       }
     } catch (error) {

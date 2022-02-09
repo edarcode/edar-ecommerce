@@ -23,6 +23,7 @@ const {
   loadMockCategories,
   loadMockSuppliers,
   loadMockProducts,
+  loadMockBills,
 } = require("./src/utils/fillDatabase.js");
 
 // Syncing all the models at once.
@@ -31,6 +32,7 @@ conn.sync({ force: true }).then(() => {
     await loadMockCategories();
     await loadMockSuppliers();
     await loadMockProducts();
+    await loadMockBills();
     console.log("%s listening at 3001"); // eslint-disable-line no-console
   });
 });
