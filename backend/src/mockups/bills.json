@@ -1,0 +1,96 @@
+{
+  "bills": [
+    {
+      "userId": 1,
+      "address": "colombia sucre-sincelejo",
+      "details": [
+        {
+          "productId": 2,
+          "amount": 5
+        },
+        {
+          "productId": 8,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "address": "colombia sucre-sincelejo",
+      "details": [
+        {
+          "productId": 1,
+          "amount": 2
+        },
+        {
+          "productId": 3,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "address": "colombia sucre-sincelejo",
+      "details": [
+        {
+          "productId": 7,
+          "amount": 1
+        },
+        {
+          "productId": 3,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "address": "colombia sucre-sincelejo",
+      "details": [
+        {
+          "productId": 9,
+          "amount": 1
+        },
+        {
+          "productId": 10,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "address": "colombia sucre-sincelejo",
+      "details": [
+        {
+          "productId": 2,
+          "amount": 1
+        },
+        {
+          "productId": 4,
+          "amount": 1
+        },
+        {
+          "productId": 5,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "address": "colombia sucre-sincelejo",
+      "details": [
+        {
+          "productId": 1,
+          "amount": 1
+        },
+        {
+          "productId": 6,
+          "amount": 1
+        },
+        {
+          "productId": 5,
+          "amount": 4
+        }
+      ]
+    }
+  ]
+}

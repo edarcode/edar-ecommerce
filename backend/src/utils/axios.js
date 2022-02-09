@@ -1,18 +1,13 @@
-const axios = require("axios");
+const Axios = require("axios");
+
+const axiosPost = Axios.create({
+  baseURL: process.env.baseURL,
+  method: "POST",
+});
 
 module.exports = {
-  axiosGet: async function (url, body = {}) {
-    const result = await axios.get(url, body);
-    return result.data;
-  },
-  axiosGetHeader: async function (url, { password, email }) {
-    const result = await axios.get(url, {
-      headers: { password, email },
-    });
-    return result.data;
-  },
-  axiosPost: async function (url, body) {
-    const result = await axios.post(url, body);
+  axiosPost: async (config) => {
+    const result = await axiosPost(config);
     return result.data;
   },
 };

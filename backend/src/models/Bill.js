@@ -4,15 +4,11 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define("Bill", {
-    date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
     status: {
       type: DataTypes.ENUM("pending", "done"),
       defaultValue: "pending",
     },
-    adress: {
+    address: {
       type: DataTypes.STRING,
       allowNull: false,
     },

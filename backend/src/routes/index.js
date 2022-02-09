@@ -1,4 +1,5 @@
 const { Router } = require("express");
+const bills = require("./bills/bills.router");
 const categories = require("./categories/categories.router");
 const images = require("./images/images.router");
 const products = require("./products/products.router");
@@ -11,5 +12,6 @@ router.use("/categories", categories);
 router.use("/suppliers", suppliers);
 router.use("/images", images);
 router.use("/users", users);
+router.use("/bills", bills);
 
 module.exports = router;
