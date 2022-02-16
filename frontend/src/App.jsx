@@ -8,10 +8,12 @@ import Dashboard from "./views/Dashboard/Dashboard";
 import Product from "./views/Product/DetailProduct";
 import Login from "./views/Login/Login";
 import Store from "./views/Store/Store";
+import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
     <AppSc className="App">
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
