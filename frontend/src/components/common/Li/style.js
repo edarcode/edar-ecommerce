@@ -6,11 +6,5 @@ export const LiSc = styled.li`
   a {
     position: relative;
     ${({ selected }) => selected && afterLineAnimated()};
-    svg {
-      display: grid;
-      align-items: center;
-      width: 25px;
-      height: 25px;
-    }
   }
 `;

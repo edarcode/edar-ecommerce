@@ -28,8 +28,8 @@ function App() {
         <Route path={store} element={<Store />} />
         <Route path={catalogue} element={<Catalogue />} />
         <Route path={contact} element={<Contact />} />
-        <Route path={cart} element={<Cart />} />
         <Route path={login} element={<Login />} />
+        <Route path={cart} element={<Cart />} />
         <Route path={dashboard} element={<Dashboard />} />
         <Route path={product} element={<Product />} />
       </Routes>
