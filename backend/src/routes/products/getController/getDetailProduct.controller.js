@@ -4,7 +4,7 @@ const getDetailProduct = async (req, res, next) => {
   try {
     const { id } = req.params;
     const product = await Product.findOne({
-      where: { id },
+      where: { id, state: true },
       attributes: ["id", "name", "description", "price", "stock", "discount"],
       include: [
         {
