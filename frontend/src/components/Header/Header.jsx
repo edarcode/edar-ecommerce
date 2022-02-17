@@ -15,7 +15,7 @@ export default function Header() {
     <HeaderSc>
       <FaBars onClick={handleOnClickNav} />
       <IoLogoApple />
-      {isTrue && <Nav className={"nav"} />}
+      <Nav className={isTrue && "collapse"} />
     </HeaderSc>
   );
 }
