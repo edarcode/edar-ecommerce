@@ -1,18 +1,17 @@
-import { link } from "../../utils/link";
+import Li from "../common/Li/Li";
 import { NavSc } from "./style";
+import { CgShoppingCart } from "react-icons/cg";
 
 export default function Nav() {
   return (
     <NavSc>
       <ul>
-        <li>{link({ to: "/", text: "Home" })}</li>
-        <li>{link({ to: "/cart", text: "Cart" })}</li>
-        <li>{link({ to: "/catalogue", text: "Catalogue" })}</li>
-        <li>{link({ to: "/contact", text: "Contact" })}</li>
-        <li>{link({ to: "/dashboard", text: "Dashboard" })}</li>
-        <li>{link({ to: "/product", text: "Product" })}</li>
-        <li>{link({ to: "/login", text: "Login" })}</li>
-        <li>{link({ to: "/store", text: "Store" })}</li>
+        <Li to={"/"} text={"Inicio"} />
+        <Li to={"/store"} text={"Tienda"} />
+        <Li to={"/catalogue"} text={"Lista de partes"} />
+        <Li to={"/contact"} text={"Contacto"} />
+        <Li to={"/cart"} text={<CgShoppingCart />} />
+        <Li to={"/login"} text={"Login"} />
       </ul>
     </NavSc>
   );

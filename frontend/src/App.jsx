@@ -8,21 +8,30 @@ import Dashboard from "./views/Dashboard/Dashboard";
 import Product from "./views/Product/DetailProduct";
 import Login from "./views/Login/Login";
 import Store from "./views/Store/Store";
-import Nav from "./components/Nav/Nav";
-
+import Header from "./components/Header/Header";
+import {
+  home,
+  cart,
+  catalogue,
+  contact,
+  login,
+  store,
+  product,
+  dashboard,
+} from "./consts/pathRoutes";
 function App() {
   return (
     <AppSc className="App">
-      <Nav />
+      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/catalogue" element={<Catalogue />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/store" element={<Store />} />
+        <Route path={home} element={<Home />} />
+        <Route path={store} element={<Store />} />
+        <Route path={catalogue} element={<Catalogue />} />
+        <Route path={contact} element={<Contact />} />
+        <Route path={cart} element={<Cart />} />
+        <Route path={login} element={<Login />} />
+        <Route path={dashboard} element={<Dashboard />} />
+        <Route path={product} element={<Product />} />
       </Routes>
     </AppSc>
   );
