@@ -8,7 +8,8 @@ import Dashboard from "./views/Dashboard/Dashboard";
 import Product from "./views/Product/DetailProduct";
 import Login from "./views/Login/Login";
 import Store from "./views/Store/Store";
-import Header from "./components/Header/Header";
+import Client from "./views/Client/Client";
+import Admin from "./views/Admin/Admin";
 import {
   home,
   cart,
@@ -22,16 +23,20 @@ import {
 function App() {
   return (
     <AppSc className="App">
-      <Header />
       <Routes>
-        <Route path={home} element={<Home />} />
-        <Route path={store} element={<Store />} />
-        <Route path={catalogue} element={<Catalogue />} />
-        <Route path={contact} element={<Contact />} />
-        <Route path={login} element={<Login />} />
-        <Route path={cart} element={<Cart />} />
-        <Route path={dashboard} element={<Dashboard />} />
-        <Route path={product} element={<Product />} />
+        {/* ------------------CLIENT------------------------------ */}
+        <Route path={home} element={<Client />}>
+          <Route index element={<Home />} />
+          <Route path={store} element={<Store />} />
+          <Route path={catalogue} element={<Catalogue />} />
+          <Route path={contact} element={<Contact />} />
+          <Route path={login} element={<Login />} />
+          <Route path={cart} element={<Cart />} />
+          <Route path={dashboard} element={<Dashboard />} />
+          <Route path={product} element={<Product />} />
+        </Route>
+        {/* ------------------ADMIN------------------------------ */}
+        <Route path="/admin" element={<Admin />}></Route>
       </Routes>
     </AppSc>
   );
