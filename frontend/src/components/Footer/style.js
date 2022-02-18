@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export const FooterSc = styled.div``;
+export const FooterSc = styled.footer``;

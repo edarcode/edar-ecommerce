@@ -1,7 +1,7 @@
 import Nav from "../Nav/Nav";
 import { HeaderSc } from "./style";
 import { FaBars } from "react-icons/fa";
-import { IoLogoApple } from "react-icons/io";
+import { VscBracketDot } from "react-icons/vsc";
 import { useIstrue } from "../hooks/useIstrue";
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <HeaderSc>
       <FaBars className="fabars" onClick={handleOnClickNav} />
-      <IoLogoApple />
+      <VscBracketDot />
       <Nav className={isTrue && "collapse"} />
     </HeaderSc>
   );
