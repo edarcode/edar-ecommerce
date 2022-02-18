@@ -9,7 +9,7 @@ export const afterLineAnimated = () => css`
     width: 100%;
     height: 2px;
     background-color: ${white};
-    animation: playful-line 0.4s linear;
+    animation: playful-line 0.4s ease;
     @keyframes playful-line {
       0% {
         width: 0%;
@@ -22,6 +22,9 @@ export const afterLineAnimated = () => css`
       }
       75% {
         width: 75%;
+      }
+      100% {
+        width: 100%;
       }
     }
   }
