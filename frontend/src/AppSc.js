@@ -7,4 +7,7 @@ export const AppSc = styled.div`
   a {
     color: ${white};
   }
+  img {
+    max-width: 100%;
+  }
 `;

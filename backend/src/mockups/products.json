@@ -136,7 +136,7 @@
     },
     {
       "name": "Micronics Parlantes 2.0 Rhapsody+ MIC-S315R Rojo",
-      "description": " Sistema Power Sound Portable 2.0, Control de volumen en línea, Parlantes: 2.5\" x 2, Alimentación de energía: Conexión USB, Conectividad: Jack 3.5 mm, Estructura en ABS, Medidas (Alt x Anch x Prof): 11.5 x 22 x 11.5 cm, Compatibilidad: Computadoras / TV / DVD / Smartphone / Tablet / Laptop / Equipos de sonido",
+      "description": "Sistema Power Sound Portable 2.0, Control de volumen en línea, Parlantes: 2.5\" x 2, Alimentación de energía: Conexión USB, Conectividad: Jack 3.5 mm, Estructura en ABS, Medidas (Alt x Anch x Prof): 11.5 x 22 x 11.5 cm, Compatibilidad: Computadoras / TV / DVD / Smartphone / Tablet / Laptop / Equipos de sonido",
       "urls": [
         "https://wongfood.vteximg.com.br/arquivos/ids/439818-750-750/Micronics-Parlantes-2-0-Rhapsody-MIC-S315R-Rojo-1-195694381.jpg?v=637572281254770000",
         "https://wongfood.vteximg.com.br/arquivos/ids/440038-100-100/Micronics-Parlantes-2-0-Rhapsody-MIC-S315R-Rojo-2-195694381.jpg?v=637572288673530000",
@@ -148,6 +148,156 @@
       "price": 12,
       "purchasePrice": 8,
       "stock": 77
+    },
+    {
+      "name": "Xiaomi Mi 10T US Cosmic Black",
+      "description": "Dispositivo con DualSim, Sistema operativo Android 10, Procesador Qualcomm Snapdragon 865 OctaCore de 2.8 GHz, Pantalla LCD Full HD+ de 6.67\" (2340 x 1080 px), Memoria interna de 128GB / Memoria RAM de 6GB, Multicámara principal de 64MP + 13MP + 5 MP / Cámara frontal 20MP, Grabación de video en 8K (7680 x 4320 px), Conectividad Bluetooth v5.0, Tipo de cargador: MIUI, Capacidad de la batería de 5000 mAh",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/434875-750-750/Xiaomi-Mi-10T-US-Cosmic-Black-1-192765974.jpg?v=637557646835100000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/434827-100-100/Xiaomi-Mi-10T-US-Cosmic-Black-2-192765974.jpg?v=637557644774600000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/434828-100-100/Xiaomi-Mi-10T-US-Cosmic-Black-3-192765974.jpg?v=637557644776630000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/434829-100-100/Xiaomi-Mi-10T-US-Cosmic-Black-4-192765974.jpg?v=637557644780070000"
+      ],
+      "suppliers": [2],
+      "categories": [2],
+      "price": 600,
+      "purchasePrice": 350,
+      "stock": 200
+    },
+    {
+      "name": "Xiaomi Redmi 9A US Granite",
+      "description": "Dispositivo con DualSim, Sistema operativo Android 10 + Miui 12, Procesador MediaTek Helio G25 OctaCore de 2.0GHz, Pantalla LCD HD+ de 5.53\" (720 x 1600 px), Memoria interna de 32GB / Memoria RAM de 2GB, Cámara principal de 13MP / Cámara frontal 5MP, Grabación de video en FHD (1920 x 1080 px) de 30fps, Conectividad Bluetooth v5.0, Capacidad de la batería de 5000 mAh",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/412430-750-750/Xiaomi-Redmi-9A-US-Granite-1-196435220.jpg?v=637491228188100000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/412405-100-100/Xiaomi-Redmi-9A-US-Granite-2-196435220.jpg?v=637491228109800000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/412406-100-100/Xiaomi-Redmi-9A-US-Granite-3-196435220.jpg?v=637491228113870000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/412407-100-100/Xiaomi-Redmi-9A-US-Granite-4-196435220.jpg?v=637491228116700000"
+      ],
+      "suppliers": [2],
+      "categories": [2],
+      "price": 500,
+      "purchasePrice": 300,
+      "stock": 150
+    },
+    {
+      "name": "Samsung Galaxy S21 FE Gris",
+      "description": "Sistema operativo Android 12 con One UI Procesador Octa-Core Pantalla Full HD+ Dynamic Amoled 2X de 6.4 Memoria interna de 128GB / Memoria RAM de 6GB Multicámara principal de 12MP + 12MP + 8MP / Cámara frontal de 32MP Grabación de video en UHD 8K (7680 x 4320 px) de 24fps Conectividad: Bluetooth v5.0 / 5G / Wifi / NFC Batería con capacidad de 4500 mAh Cable de carga USB tipo C",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/510609-750-750/Botella-Deportiva-450ml-Thermos-Azul-Samsung-Galaxy-S21-FE-Gris-1-269789359.jpg?v=637776057895230000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/510601-100-100/Botella-Deportiva-450ml-Thermos-Azul-Samsung-Galaxy-S21-FE-Gris-2-269789359.jpg?v=637776057794300000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/510602-100-100/Botella-Deportiva-450ml-Thermos-Azul-Samsung-Galaxy-S21-FE-Gris-3-269789359.jpg?v=637776057798530000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/510603-100-100/Botella-Deportiva-450ml-Thermos-Azul-Samsung-Galaxy-S21-FE-Gris-4-269789359.jpg?v=637776057800870000"
+      ],
+      "suppliers": [3],
+      "categories": [2],
+      "price": 800,
+      "purchasePrice": 600,
+      "stock": 160
+    },
+    {
+      "name": "Xiaomi 11 Lite Peach Pink",
+      "description": "Dispositivo con Dual-Sim Sistema operativo Android 11 Procesador: Qualcomm Snapdragon 778G Octacore de 2.4 Ghz Pantalla AMOLED FHD+ de 6.55 (2400 x 1080 px) Memoria interna de 128GB / Memoria RAM de 6GB Memoria expandible Multicámara de 64 MP + 8 MP + 5 MP / Cámara frontal de 20 MP Resolución de grabación de video en 4K Con lector de huella Bluetooth 5.2 Capacidad de la batería de 4250 mAh",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/493135-750-750/Xiaomi-11-Lite-Peach-Pink-1-244529304.jpg?v=637717207688700000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/492815-100-100/Xiaomi-11-Lite-Peach-Pink-2-244529304.jpg?v=637716659710400000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/492816-100-100/Xiaomi-11-Lite-Peach-Pink-3-244529304.jpg?v=637716659712600000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/492817-100-100/Xiaomi-11-Lite-Peach-Pink-4-244529304.jpg?v=637716659714800000"
+      ],
+      "suppliers": [2],
+      "categories": [2],
+      "price": 450,
+      "purchasePrice": 250,
+      "stock": 100
+    },
+    {
+      "name": "Poco M3 Pro EU Power Black",
+      "description": "Dispositivo con Dual-Sim Sistema operativo Android 11 Procesador Mediatek Dimensity 700 Octa-Core de 2.2 GHz Pantalla LCD Full HD+ de 6.5 (2400 x 1080 px) Memoria interna de 128GB / Memoria RAM de 6GB Memoria expandible de 256GB Multicámara de 48MP + 2MP + 2MP / Cámara frontal 8MP Reproducción de video en Full HD+ (2440 x 1080 px) Grabación de video en Full HD (1920 x 1080 px) de 30fps Conectividad Bluetooth v5.1 Capacidad de la batería de 5000 mAh",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/473261-750-750/Poco-M3-Pro-EU-Power-Black-1-214356231.jpg?v=637678659381700000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/473255-100-100/Poco-M3-Pro-EU-Power-Black-2-214356231.jpg?v=637678651738930000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/473256-100-100/Poco-M3-Pro-EU-Power-Black-3-214356231.jpg?v=637678651741700000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/473261-100-100/Poco-M3-Pro-EU-Power-Black-1-214356231.jpg?v=637678659381700000"
+      ],
+      "suppliers": [2],
+      "categories": [2],
+      "price": 300,
+      "purchasePrice": 200,
+      "stock": 100
+    },
+    {
+      "name": "SoyMomo Tablet para Niños Kid Pro + Cover Rosa",
+      "description": "Sistema operativo Android 9.0 Pie, Procesador Spectrum SC9863 OctaCore de hasta 1.6 GHz, Pantalla IPS HD de 8\" (1280 x 800 px), Memoria interna de 32GB / Memoria RAM de 2GB, Cámara principal de 8MP / Cámara frontal de 5MP, Resolución de grabación en 720p, Algoritmo de inteligencia que detecta el cyberbullying (acoso virtual), App con Control Parental, Bloqueo remoto: Desde la app de Control Parental también puedes bloquear la tablet, Configuración de horario de uso, Duración de la batería: Hasta 10 horas, Incluye: Cover",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/469458-750-750/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Rosa-1-218501595.jpg?v=637668064976630000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/469380-100-100/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Rosa-2-218501595.jpg?v=637668060679830000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/469381-100-100/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Rosa-3-218501595.jpg?v=637668060699570000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/469382-100-100/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Rosa-4-218501595.jpg?v=637668060719570000"
+      ],
+      "suppliers": [4],
+      "categories": [5],
+      "price": 200,
+      "purchasePrice": 100,
+      "stock": 80
+    },
+    {
+      "name": "SoyMomo Tablet para Niños Kid Pro + Cover Azul",
+      "description": "Sistema operativo Android 9.0 Pie, Procesador Spectrum SC9863 OctaCore de hasta 1.6 GHz, Pantalla IPS HD de 8\" (1280 x 800 px), Memoria interna de 32GB / Memoria RAM de 2GB, Cámara principal de 8MP / Cámara frontal de 5MP, Resolución de grabación en 720p, Algoritmo de inteligencia que detecta el cyberbullying (acoso virtual), App con Control Parental, Bloqueo remoto: Desde la app de Control Parental también puedes bloquear la tablet, Configuración de horario de uso, Duración de la batería: Hasta 10 horas, Incluye: Cover",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/469457-750-750/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Azul-1-218501594.jpg?v=637668064968030000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/469377-100-100/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Azul-2-218501594.jpg?v=637668058840430000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/469378-100-100/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Azul-3-218501594.jpg?v=637668058852400000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/469379-100-100/SoyMomo-Tablet-para-Ni-os-Kid-Pro-Cover-Azul-4-218501594.jpg?v=637668058855870000"
+      ],
+      "suppliers": [4],
+      "categories": [5],
+      "price": 200,
+      "purchasePrice": 100,
+      "stock": 70
+    },
+    {
+      "name": "Lenovo Smart Tab M8 Iron Grey",
+      "description": "Sistema operativo Android 9.0 Pie, Procesador MediaTek Helio A22 QuadCore de 2.0 GHz, Pantalla IPS HD de 8\" (1280 x 800 px), Memoria interna de 32GB / Memoria RAM de 2GB, Memoria expandible hasta 128GB / Memoria RAM de 2GB, Cámara principal de 5MP / Cámara frontal de 2MP, Resolución de grabación en 720p, Lector de tarjetas: Micro SD, Conectividad: Bluetooth v4.0, Duración de la batería: Hasta 18 horas,ZA5C0067PE",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/447221-750-750/Lenovo-Smart-Tab-M8-Iron-Grey-1-199500564.jpg?v=637598364158930000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/447216-100-100/Lenovo-Smart-Tab-M8-Iron-Grey-2-199500564.jpg?v=637598364091230000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/447217-100-100/Lenovo-Smart-Tab-M8-Iron-Grey-3-199500564.jpg?v=637598364110170000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/447218-100-100/Lenovo-Smart-Tab-M8-Iron-Grey-4-199500564.jpg?v=637598364125670000"
+      ],
+      "suppliers": [4],
+      "categories": [5],
+      "price": 300,
+      "purchasePrice": 150,
+      "stock": 50
+    },
+    {
+      "name": "Huawei MatePad T10 + Cover Blue",
+      "description": "Sistema operativo EMUI 10.1 (Basado en Android 10), Procesador Kirin 710A OctaCore de hasta 2.0 GHz, Pantalla IPS HD de 9.7\" (1280 x 800 px), Memoria interna de 32GB / Memoria RAM de 2GB, Memoria expandible hasta 512GB, Cámara principal de 5MP / Cámara frontal 2MP, Calidad de sonido: Histen 6.1 Efecto de Sonido, Resolución de video HD (1280 x 720 pixeles), Conectividad: Bluetooth v5.0, Batería con capacidad de 5100 mAh, Incluye: Cover Blue",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/452475-750-750/Huawei-MatePad-T10-Cover-Blue-1-214810328.jpg?v=637608622455670000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/452647-100-100/Huawei-MatePad-T10-Cover-Blue-2-214810328.jpg?v=637608626810730000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/452648-100-100/Huawei-MatePad-T10-Cover-Blue-3-214810328.jpg?v=637608626823430000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/452475-100-100/Huawei-MatePad-T10-Cover-Blue-1-214810328.jpg?v=637608622455670000"
+      ],
+      "suppliers": [4],
+      "categories": [5],
+      "price": 250,
+      "purchasePrice": 100,
+      "stock": 10
+    },
+    {
+      "name": "Lenovo Tab M10 HD 2da Generación",
+      "description": "Sistema operativo Android 10 Q, Procesador MediaTek Helio P22T OctaCore de 2.3 GHz, Pantalla IPS HD de 10.1\" (1280 x 800 px), Memoria interna de 32GB / Memoria RAM de 2GB, Memoria expandible de hasta 1TB, Cámara principal de 8MP / Cámara frontal de 5MP, Resolución de grabación en 1080p, 2 Parlantes frontales con Dolby Atmos, Conectividad: Bluetooth v5.0, Duración de la batería: Hasta 10 horas,ZA6V0100PE",
+      "urls": [
+        "https://wongfood.vteximg.com.br/arquivos/ids/464645-750-750/Lenovo-Tab-M10-HD-2da-Generaci-n-1-209590728.jpg?v=637657156761670000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/464631-100-100/Lenovo-Tab-M10-HD-2da-Generaci-n-2-209590728.jpg?v=637657146887530000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/464632-100-100/Lenovo-Tab-M10-HD-2da-Generaci-n-3-209590728.jpg?v=637657146891300000",
+        "https://wongfood.vteximg.com.br/arquivos/ids/464633-100-100/Lenovo-Tab-M10-HD-2da-Generaci-n-4-209590728.jpg?v=637657146894430000"
+      ],
+      "suppliers": [4],
+      "categories": [5],
+      "price": 180,
+      "purchasePrice": 120,
+      "stock": 30
     }
   ]
 }

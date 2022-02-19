@@ -11,6 +11,7 @@ export const HeaderSc = styled.header`
   nav {
     position: absolute;
     top: 60px;
+    z-index: 10;
     width: 100%;
     height: 0;
     overflow: hidden;

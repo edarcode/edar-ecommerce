@@ -1,5 +1,5 @@
 module.exports = {
   suppliersPerPage: 12,
-  productsPerPage: 3,
+  productsPerPage: 6,
   productsPerPageAdmin: 3,
 };
