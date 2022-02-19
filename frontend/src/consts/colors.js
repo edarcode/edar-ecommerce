@@ -4,3 +4,5 @@ export const bgBox = "#2d2d2d";
 export const lyrics = "#7c7c7c";
 export const white = "white";
 export const bgBtn = "#0071e3";
+export const bgGradiente =
+  "radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, #5d34d5 100.2% );";

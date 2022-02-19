@@ -1,3 +1,5 @@
+import { AboutSc } from "./style";
+
 export default function About() {
-  return <div>@edarcode</div>;
+  return <AboutSc>@edarcode</AboutSc>;
 }
