@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ImageCarouselSc = styled.div`
-  position: relative;
-  overflow: hidden;
   height: 300px;
   img {
     object-fit: contain;
@@ -12,6 +10,9 @@ export const ImageCarouselSc = styled.div`
   .right {
     position: absolute;
     top: calc(50% - 15px);
+  }
+  .left {
+    left: 0;
   }
   .right {
     right: 0;

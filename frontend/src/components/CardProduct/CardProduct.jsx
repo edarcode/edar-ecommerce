@@ -9,7 +9,7 @@ export default function CardProduct({ id, name, price, images }) {
         <h6>{name}</h6>
       </header>
       <ImageCarousel images={images} />
-      <footer>{price}</footer>
+      <footer>${price}</footer>
     </CardProductSc>
   );
 }
