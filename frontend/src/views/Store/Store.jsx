@@ -1,10 +1,10 @@
-import CardProduct from "../../components/CardProduct/CardProduct";
+import CardsProducts from "../../components/CardsProducts/CardsProducts";
 import { StoreSc } from "./style";
 
 export default function Store() {
   return (
     <StoreSc>
-      <CardProduct />
+      <CardsProducts />
     </StoreSc>
   );
 }
