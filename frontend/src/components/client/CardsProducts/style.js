@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gridCenter } from "../../styles/gridCenter";
+import { gridCenter } from "../../../styles/gridCenter";
 
 export const CardsProductsSc = styled.div`
   ${gridCenter}

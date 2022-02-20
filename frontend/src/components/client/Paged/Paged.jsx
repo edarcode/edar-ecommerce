@@ -2,7 +2,7 @@ import { PagedSc } from "./style";
 import ReactPaginate from "react-paginate";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from "../../redux/reducers/products/actions";
+import { getAllProducts } from "../../../redux/reducers/products/actions";
 
 export default function Paged() {
   const dispatch = useDispatch();

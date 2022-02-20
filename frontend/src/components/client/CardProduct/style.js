@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { white } from "../../consts/colors";
-import { gridCenter } from "../../styles/gridCenter";
+import { white } from "../../../consts/colors";
+import { gridCenter } from "../../../styles/gridCenter";
 
 export const CardProductSc = styled.article`
   position: relative;

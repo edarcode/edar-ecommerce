@@ -1,3 +1,3 @@
 export default function Catalogue() {
-  return <div>catalogue</div>;
+  return <main>catalogue</main>;
 }

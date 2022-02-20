@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { bgBox, bgNavbar } from "../../consts/colors";
-import { flexCenter } from "../../styles/flexCenter";
-import { gridCenter } from "../../styles/gridCenter";
+import { bgBox, bgNavbar } from "../../../consts/colors";
+import { flexCenter } from "../../../styles/flexCenter";
+import { gridCenter } from "../../../styles/gridCenter";
 
 export const PagedSc = styled.div`
   ul {

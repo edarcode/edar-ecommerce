@@ -7,9 +7,7 @@ export default function Client() {
   return (
     <ClientSc>
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </ClientSc>
   );

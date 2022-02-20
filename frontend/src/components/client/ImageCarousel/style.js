@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { bgNavbar, white } from "../../consts/colors";
+import { bgNavbar, white } from "../../../consts/colors";
 
 export const ImageCarouselSc = styled.div`
   height: 300px;

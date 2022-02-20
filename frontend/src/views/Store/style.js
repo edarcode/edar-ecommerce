@@ -1,10 +1,8 @@
 import styled from "styled-components";
+import { gridCenter } from "../../styles/gridCenter";
 
-export const StoreSc = styled.div`
+export const StoreSc = styled.main`
   padding: 15px;
-  display: grid;
-  align-items: start;
   height: 100%;
-  grid-template-rows: 1fr auto;
-  gap: 15px;
+  ${gridCenter};
 `;
