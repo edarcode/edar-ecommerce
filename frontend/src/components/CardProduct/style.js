@@ -21,7 +21,12 @@ export const CardProductSc = styled.article`
     margin: 0;
   }
   footer {
-    align-self: end;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     font-size: 1.5rem;
+    svg {
+      cursor: pointer;
+    }
   }
 `;

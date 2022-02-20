@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import { CgShoppingCart } from "react-icons/cg";
 import { CardProductSc } from "./style";
 
 export default function CardProduct({ id, name, price, images }) {
@@ -28,7 +29,9 @@ export default function CardProduct({ id, name, price, images }) {
         forward={handleOnClickForward}
         back={handleOnClickBack}
       />
-      <footer>${price}</footer>
+      <footer>
+        ${price} <CgShoppingCart />
+      </footer>
     </CardProductSc>
   );
 }
