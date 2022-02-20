@@ -9,7 +9,7 @@ export const SearchByNameSc = styled.div`
   border-radius: 25px;
   padding: 1px 8px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 600px;
   input {
     width: 100%;
     padding-left: 5px;

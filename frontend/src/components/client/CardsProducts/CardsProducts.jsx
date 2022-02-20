@@ -17,10 +17,12 @@ export default function CardsProducts() {
     dispatch(getAllProducts({ page: 0, name }));
   }, [dispatch, name]);
 
+  if (!Object.keys(products).length) return <span>Not found</span>;
   return (
     <CardsProductsSc>
-      {products &&
-        products.map((item) => <CardProduct key={item.id} {...item} />)}
+      {products.map((item) => (
+        <CardProduct key={item.id} {...item} />
+      ))}
     </CardsProductsSc>
   );
 }
