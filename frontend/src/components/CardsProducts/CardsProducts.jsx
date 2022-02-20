@@ -9,7 +9,7 @@ export default function CardsProducts() {
   const { products } = useSelector((state) => state.products);
 
   useEffect(() => {
-    dispatch(getAllProducts());
+    dispatch(getAllProducts({ page: 0 }));
   }, [dispatch]);
 
   return (

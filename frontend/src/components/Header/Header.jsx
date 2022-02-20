@@ -15,7 +15,7 @@ export default function Header() {
     <HeaderSc>
       <FaBars className="fabars" onClick={handleOnClickNav} />
       <VscBracketDot />
-      <Nav className={isTrue && "collapse"} />
+      <Nav className={isTrue && "collapse"} setIsTrue={setIsTrue} />
     </HeaderSc>
   );
 }

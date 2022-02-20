@@ -9,9 +9,19 @@ export const CardProductSc = styled.article`
   height: 100%;
   padding: 8px;
   background-color: ${white};
+  border-radius: 3px;
+  box-shadow: 0 0 8px 0.5px black;
+  transition: transform 0.8s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
   h6 {
     font-size: 1.6rem;
     text-align: center;
     margin: 0;
+  }
+  footer {
+    align-self: end;
+    font-size: 1.5rem;
   }
 `;

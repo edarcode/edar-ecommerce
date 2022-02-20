@@ -3,7 +3,7 @@ import { gridCenter } from "../../styles/gridCenter";
 
 export const CardsProductsSc = styled.div`
   ${gridCenter}
-  gap: 5px;
+  gap: 25px;
   max-width: 1280px;
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
