@@ -1,4 +1,4 @@
-import About from "../About/About";
+import About from "../../client/About/About";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import { FooterSc } from "./style";
 

@@ -1,7 +1,7 @@
 import { ClientSc } from "./style";
 import { Outlet } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/client/Footer/Footer";
+import Header from "../../components/client/Header/Header";
 
 export default function Client() {
   return (

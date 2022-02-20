@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { bgNavbar, white } from "../../consts/colors";
-import { flexCenter } from "../../styles/flexCenter";
+import { bgNavbar, white } from "../../../consts/colors";
+import { flexCenter } from "../../../styles/flexCenter";
 
 export const HeaderSc = styled.header`
   position: relative;

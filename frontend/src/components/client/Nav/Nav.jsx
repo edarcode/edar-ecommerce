@@ -1,4 +1,4 @@
-import Li from "../common/Li/Li";
+import Li from "../../common/Li/Li";
 import { NavSc } from "./style";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineLogin /* ,AiOutlineLogout */ } from "react-icons/ai";
