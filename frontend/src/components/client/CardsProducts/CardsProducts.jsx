@@ -7,10 +7,15 @@ import { CardsProductsSc } from "./style";
 export default function CardsProducts() {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
+  const { name } = useSelector((state) => state.filterOrderProducts);
 
   useEffect(() => {
     dispatch(getAllProducts({ page: 0 }));
   }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(getAllProducts({ page: 0, name }));
+  }, [dispatch, name]);
 
   return (
     <CardsProductsSc>

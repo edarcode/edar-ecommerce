@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { gridCenter } from "../../../styles/gridCenter";
 
-export const CardsProductsSc = styled.div`
+export const CardsProductsSc = styled.section`
   ${gridCenter}
   gap: 25px;
   max-width: 1280px;

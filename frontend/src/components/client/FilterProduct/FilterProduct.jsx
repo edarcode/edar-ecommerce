@@ -1,10 +1,10 @@
-import SearchByName from "../SearchByName/SearchByName";
+import SearchByCategory from "../SearchByCategory/SearchByCategory";
 import { FilterProductSc } from "./style";
 
 export default function FilterProduct() {
   return (
     <FilterProductSc>
-      <SearchByName />
+      <SearchByCategory />
     </FilterProductSc>
   );
 }
