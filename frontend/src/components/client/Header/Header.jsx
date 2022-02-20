@@ -2,7 +2,7 @@ import Nav from "../Nav/Nav";
 import { HeaderSc } from "./style";
 import { FaBars } from "react-icons/fa";
 import { VscBracketDot } from "react-icons/vsc";
-import { useIstrue } from "../hooks/useIstrue";
+import { useIstrue } from "../../hooks/useIstrue";
 
 export default function Header() {
   const { isTrue, setIsTrue } = useIstrue();
@@ -15,7 +15,7 @@ export default function Header() {
     <HeaderSc>
       <FaBars className="fabars" onClick={handleOnClickNav} />
       <VscBracketDot />
-      <Nav className={isTrue && "collapse"} />
+      <Nav className={isTrue && "collapse"} setIsTrue={setIsTrue} />
     </HeaderSc>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from "../../redux/reducers/products/actions";
+import { getAllProducts } from "../../../redux/reducers/products/actions";
 import CardProduct from "../CardProduct/CardProduct";
 import { CardsProductsSc } from "./style";
 
@@ -9,7 +9,7 @@ export default function CardsProducts() {
   const { products } = useSelector((state) => state.products);
 
   useEffect(() => {
-    dispatch(getAllProducts());
+    dispatch(getAllProducts({ page: 0 }));
   }, [dispatch]);
 
   return (

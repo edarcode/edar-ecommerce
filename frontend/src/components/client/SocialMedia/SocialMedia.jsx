@@ -1,7 +1,7 @@
 import { SocialMediaSc } from "./style";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-import { hiperLink } from "../../utils/hiperLink";
+import { hiperLink } from "../../../utils/hiperLink";
 
 const dataLinks = [
   {
