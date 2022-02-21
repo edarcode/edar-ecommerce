@@ -20,23 +20,23 @@ export default function SearchByPrice() {
   };
 
   return (
-    <SearchByPriceSc>
+    <SearchByPriceSc min={min} max={max}>
       <input
+        className="range"
         type="range"
         min={0}
         max={2000}
         value={(min && min) || 0}
         onChange={handleOnChangeMin}
       />
-      {min && <span>{min}</span>}
       <input
+        className="range"
         type="range"
         min={min}
         max={4000}
         value={(max && max) || 0}
         onChange={handleOnChangeMax}
       />
-      {max && <span>{max}</span>}
     </SearchByPriceSc>
   );
 }
