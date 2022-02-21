@@ -7,11 +7,11 @@ import { getAllProducts } from "../../../redux/reducers/products/actions";
 export default function Paged() {
   const dispatch = useDispatch();
   const { pageCount } = useSelector((state) => state.products);
-  const { name, idCategory } = useSelector(
+  const { name, idCategory, min, max } = useSelector(
     (state) => state.filterOrderProducts
   );
   const handleOnChangePage = ({ selected }) => {
-    dispatch(getAllProducts({ page: selected, name, idCategory }));
+    dispatch(getAllProducts({ page: selected, name, idCategory, min, max }));
     window.scroll({
       top: 0,
     });

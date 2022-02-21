@@ -7,7 +7,7 @@ import { CardsProductsSc } from "./style";
 export default function CardsProducts() {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
-  const { name, idCategory } = useSelector(
+  const { name, idCategory, min, max } = useSelector(
     (state) => state.filterOrderProducts
   );
 
@@ -16,8 +16,8 @@ export default function CardsProducts() {
   }, [dispatch]);
 
   useEffect(() => {
-    dispatch(getAllProducts({ page: 0, name, idCategory }));
-  }, [dispatch, name, idCategory]);
+    dispatch(getAllProducts({ page: 0, name, idCategory, min, max }));
+  }, [dispatch, name, idCategory, min, max]);
 
   if (!products.length) return <span>Not found</span>;
   return (
