@@ -1,11 +1,11 @@
 import { SET_PRODUCTS } from "./const";
 
 const initialState = {
-  /* products: [],
+  products: [],
   page: null,
   productsPerPage: null,
   pageCount: null,
-  productsCount: null, */
+  productsCount: null,
 };
 
 export const products = (state = initialState, { type, payload }) => {
