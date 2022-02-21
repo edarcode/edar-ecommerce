@@ -5,7 +5,7 @@ const initialState = {
   idCategory: null,
   order: [],
   min: 0,
-  max: null,
+  max: 0,
 };
 
 export const filterOrderProducts = (

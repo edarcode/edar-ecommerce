@@ -5,6 +5,7 @@ import { flexCenter } from "../../../styles/flexCenter";
 export const SearchCategorySc = styled.div`
   position: relative;
   width: 100%;
+  max-width: 400px;
   .title {
     ${flexCenter};
     gap: 15px;

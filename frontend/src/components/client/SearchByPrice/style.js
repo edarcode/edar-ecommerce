@@ -7,6 +7,7 @@ export const SearchByPriceSc = styled.div`
   ${flexCenter};
   width: 100%;
   height: 60px;
+  max-width: 400px;
   &::after,
   &::before {
     position: absolute;
@@ -14,11 +15,11 @@ export const SearchByPriceSc = styled.div`
   }
   &::after {
     left: 0;
-    content: "${({ min }) => min !== 0 && min}";
+    content: "${({ min }) => min !== 0 && `$ ${min}`}";
   }
   &::before {
     right: 0;
-    content: "${({ max }) => max !== 0 && max}";
+    content: "${({ max }) => max !== 0 && `$ ${max}`}";
   }
   .range {
     -webkit-appearance: none;

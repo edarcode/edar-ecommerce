@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { action } from "../../../utils/action";
 import { SET_NAME } from "../../../redux/reducers/filterOrderProducts/const";
 
-export default function SearchByName() {
+export default function SearchByName({ className }) {
   const dispatch = useDispatch();
   const { name } = useSelector((state) => state.filterOrderProducts);
 
@@ -14,7 +14,7 @@ export default function SearchByName() {
   };
 
   return (
-    <SearchByNameSc>
+    <SearchByNameSc className={className}>
       <input type="text" value={name} onChange={handleOnChangeName} />
       <BiSearchAlt />
     </SearchByNameSc>

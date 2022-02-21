@@ -4,7 +4,7 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../../../redux/reducers/products/actions";
 
-export default function Paged() {
+export default function Paged({ className }) {
   const dispatch = useDispatch();
   const { pageCount } = useSelector((state) => state.products);
   const { name, idCategory, min, max } = useSelector(
@@ -19,7 +19,7 @@ export default function Paged() {
 
   if (pageCount <= 1) return null;
   return (
-    <PagedSc>
+    <PagedSc className={className}>
       <ReactPaginate
         previousLabel={<FaAngleDoubleLeft />}
         nextLabel={<FaAngleDoubleRight />}
