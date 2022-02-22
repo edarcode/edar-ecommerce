@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../../../redux/reducers/products/actions";
+import { useDebounce } from "../../hooks/useDebounce";
 import CardProduct from "../CardProduct/CardProduct";
 import { CardsProductsSc } from "./style";
 
@@ -10,14 +11,24 @@ export default function CardsProducts({ className }) {
   const { name, idCategory, min, max } = useSelector(
     (state) => state.filterOrderProducts
   );
+  const debouncedMin = useDebounce(min, 400);
+  const debouncedMax = useDebounce(max, 400);
 
   useEffect(() => {
     dispatch(getAllProducts({ page: 0 }));
   }, [dispatch]);
 
   useEffect(() => {
-    dispatch(getAllProducts({ page: 0, name, idCategory, min, max }));
-  }, [dispatch, name, idCategory, min, max]);
+    dispatch(
+      getAllProducts({
+        page: 0,
+        name,
+        idCategory,
+        min: debouncedMin,
+        max: debouncedMax,
+      })
+    );
+  }, [dispatch, name, idCategory, debouncedMin, debouncedMax]);
 
   if (!products.length) return <span>Not found</span>;
   return (
