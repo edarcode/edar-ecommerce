@@ -31,6 +31,7 @@ export default function SearchByPrice() {
         type="range"
         min={0}
         max={2000}
+        step={10}
         value={(min && min) || 0}
         onChange={handleOnChangeMin}
       />
@@ -39,6 +40,7 @@ export default function SearchByPrice() {
         type="range"
         min={min}
         max={4000}
+        step={10}
         value={(max && max) || 0}
         onChange={handleOnChangeMax}
       />

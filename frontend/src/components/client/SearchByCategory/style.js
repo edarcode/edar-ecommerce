@@ -14,13 +14,17 @@ export const SearchCategorySc = styled.div`
     color: ${white};
     border-radius: 5px;
     padding: 8px;
+    cursor: pointer;
     svg {
       padding-top: 5px;
       width: 25px;
       height: 25px;
     }
+    &:active {
+      transform: scale(0.9);
+    }
   }
-  .categories {
+  .list {
     position: absolute;
     top: 50px;
     left: -2px;
@@ -34,13 +38,13 @@ export const SearchCategorySc = styled.div`
       padding: 8px;
       text-transform: capitalize;
     }
-    .selected {
+    .list__selected {
       background-image: ${bgGradiente};
       color: ${white};
       border-radius: 3px;
     }
   }
-  .categories--collapse {
+  .list--collapse {
     padding: 20px 5px;
     width: calc(100% + 4px);
   }
