@@ -1,11 +1,17 @@
-import { SET_NAME, SET_ID_CATEGORY, SET_MIN, SET_MAX } from "./const";
+import {
+  SET_NAME,
+  SET_ID_CATEGORY,
+  SET_MIN,
+  SET_MAX,
+  SET_ORDER,
+} from "./const";
 
 const initialState = {
   name: "",
   idCategory: null,
-  order: [],
   min: 0,
   max: 0,
+  order: null,
 };
 
 export const filterOrderProducts = (
@@ -21,6 +27,7 @@ export const filterOrderProducts = (
     [SET_ID_CATEGORY]: () => setState("idCategory"),
     [SET_MIN]: () => setState("min"),
     [SET_MAX]: () => setState("max"),
+    [SET_ORDER]: () => setState("order"),
   };
   return (cases[type] && cases[type]()) || state;
 };

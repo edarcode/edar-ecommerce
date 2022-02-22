@@ -12,7 +12,7 @@ const getProducts = async (req, res, next) => {
       limit: productsPerPage,
       attributes: ["id", "name", "price", "discount"],
       include: include({ idCategory }),
-      order: order && order,
+      order: order && [order.split(",")],
       distinct: true,
     });
     const data = {

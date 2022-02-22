@@ -30,7 +30,7 @@ export default function SearchByCategory() {
   return (
     <SearchCategorySc>
       <div className="title" onClick={handleOnClickIsTrue}>
-        Categorías {<BsChevronDown />}{" "}
+        Categorías {<BsChevronDown />}
       </div>
       {
         <ul className={(isTrue && "list list--collapse") || "list"}>

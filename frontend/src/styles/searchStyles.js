@@ -21,7 +21,7 @@ export const searchStyles = css`
       height: 25px;
     }
     &:active {
-      transform: scale(0.9);
+      transform: scale(1.05);
     }
   }
   .list {
