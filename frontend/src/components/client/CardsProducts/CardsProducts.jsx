@@ -8,11 +8,12 @@ import { CardsProductsSc } from "./style";
 export default function CardsProducts({ className }) {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
-  const { name, idCategory, min, max } = useSelector(
+  const { name, idCategory, min, max, order } = useSelector(
     (state) => state.filterOrderProducts
   );
   const debouncedMin = useDebounce(min, 400);
   const debouncedMax = useDebounce(max, 400);
+  const debouncedName = useDebounce(name, 250);
 
   useEffect(() => {
     dispatch(getAllProducts({ page: 0 }));
@@ -22,13 +23,14 @@ export default function CardsProducts({ className }) {
     dispatch(
       getAllProducts({
         page: 0,
-        name,
+        name: debouncedName,
         idCategory,
         min: debouncedMin,
         max: debouncedMax,
+        order,
       })
     );
-  }, [dispatch, name, idCategory, debouncedMin, debouncedMax]);
+  }, [dispatch, debouncedName, idCategory, order, debouncedMin, debouncedMax]);
 
   if (!products.length) return <span>Not found</span>;
   return (
