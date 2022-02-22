@@ -7,10 +7,10 @@ import SearchByName from "../../components/client/SearchByName/SearchByName";
 export default function Store() {
   return (
     <StoreSc>
-      <SearchByName />
-      <FilterProduct />
-      <CardsProducts />
-      <Paged />
+      <SearchByName className={"searchByName"} />
+      <FilterProduct className={"filterProduct"} />
+      <CardsProducts className={"cardsProducts"} />
+      <Paged className={"paged"} />
     </StoreSc>
   );
 }

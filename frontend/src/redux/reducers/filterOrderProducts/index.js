@@ -5,7 +5,7 @@ const initialState = {
   idCategory: null,
   order: [],
   min: 0,
-  max: null,
+  max: 0,
 };
 
 export const filterOrderProducts = (
@@ -19,7 +19,7 @@ export const filterOrderProducts = (
   const cases = {
     [SET_NAME]: () => setState("name"),
     [SET_ID_CATEGORY]: () => setState("idCategory"),
-    [SET_MIN]: () => ({ ...state, min: payload, max: payload + 100 }),
+    [SET_MIN]: () => setState("min"),
     [SET_MAX]: () => setState("max"),
   };
   return (cases[type] && cases[type]()) || state;

@@ -5,6 +5,7 @@ import {
 } from "../../../redux/reducers/filterOrderProducts/const";
 import { action } from "../../../utils/action";
 import { SearchByPriceSc } from "./style";
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 export default function SearchByPrice() {
   const dispatch = useDispatch();
@@ -21,6 +22,10 @@ export default function SearchByPrice() {
 
   return (
     <SearchByPriceSc min={min} max={max}>
+      {min !== 0 && <span className="min">$ {min}</span>}
+      {max !== 0 && <span className="max">$ {max}</span>}
+      <FaLongArrowAltRight className="right" />
+      <FaLongArrowAltLeft className="left" />
       <input
         className="range"
         type="range"
@@ -30,7 +35,7 @@ export default function SearchByPrice() {
         onChange={handleOnChangeMin}
       />
       <input
-        className="range"
+        className="range range--upper"
         type="range"
         min={min}
         max={4000}

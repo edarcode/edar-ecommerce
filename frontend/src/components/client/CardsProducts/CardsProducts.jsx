@@ -4,7 +4,7 @@ import { getAllProducts } from "../../../redux/reducers/products/actions";
 import CardProduct from "../CardProduct/CardProduct";
 import { CardsProductsSc } from "./style";
 
-export default function CardsProducts() {
+export default function CardsProducts({ className }) {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
   const { name, idCategory, min, max } = useSelector(
@@ -21,7 +21,7 @@ export default function CardsProducts() {
 
   if (!products.length) return <span>Not found</span>;
   return (
-    <CardsProductsSc>
+    <CardsProductsSc className={className}>
       {products.map((item) => (
         <CardProduct key={item.id} {...item} />
       ))}

@@ -1,37 +1,60 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { bgGradiente } from "../../../consts/colors";
 import { flexCenter } from "../../../styles/flexCenter";
+
+const sliderStyles = () => css`
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: ${bgGradiente};
+  cursor: pointer;
+`;
 
 export const SearchByPriceSc = styled.div`
   position: relative;
   ${flexCenter};
   width: 100%;
   height: 60px;
-  &::after,
-  &::before {
+  max-width: 400px;
+  .min,
+  .max {
     position: absolute;
     bottom: 0px;
   }
-  &::after {
+  .min {
     left: 0;
-    content: "${({ min }) => min !== 0 && min}";
   }
-  &::before {
+  .max {
     right: 0;
-    content: "${({ max }) => max !== 0 && max}";
   }
+  .left,
+  .right {
+    position: absolute;
+    top: 0;
+    width: 12px;
+    height: 12px;
+  }
+  .right {
+    left: 5px;
+  }
+  .left {
+    right: 5px;
+  }
+
   .range {
     -webkit-appearance: none;
     height: 1px;
     width: 100%;
     background-image: ${bgGradiente};
+    &::-webkit-slider-thumb {
+      ${sliderStyles};
+    }
+    &::-moz-range-thumb {
+      ${sliderStyles};
+    }
   }
-  .range::-webkit-slider-thumb,
-  .range::-moz-range-thumb {
-    -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-image: ${bgGradiente};
+  .range--upper {
+    transform: rotate(180deg);
   }
 `;
