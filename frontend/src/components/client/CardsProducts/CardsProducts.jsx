@@ -13,6 +13,7 @@ export default function CardsProducts({ className }) {
   );
   const debouncedMin = useDebounce(min, 400);
   const debouncedMax = useDebounce(max, 400);
+  const debouncedName = useDebounce(name, 250);
 
   useEffect(() => {
     dispatch(getAllProducts({ page: 0 }));
@@ -22,13 +23,13 @@ export default function CardsProducts({ className }) {
     dispatch(
       getAllProducts({
         page: 0,
-        name,
+        name: debouncedName,
         idCategory,
         min: debouncedMin,
         max: debouncedMax,
       })
     );
-  }, [dispatch, name, idCategory, debouncedMin, debouncedMax]);
+  }, [dispatch, debouncedName, idCategory, debouncedMin, debouncedMax]);
 
   if (!products.length) return <span>Not found</span>;
   return (
