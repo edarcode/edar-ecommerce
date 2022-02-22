@@ -33,14 +33,10 @@ export default function SearchByCategory() {
         Categorías {<BsChevronDown />}{" "}
       </div>
       {
-        <ul
-          className={
-            (isTrue && "categories categories--collapse") || "categories"
-          }
-        >
+        <ul className={(isTrue && "list list--collapse") || "list"}>
           {categories.map(({ id, name }) => (
             <li
-              className={(idCategory === id && "selected") || ""}
+              className={(idCategory === id && "list__selected") || ""}
               key={id}
               id={id}
               onClick={handleOnClickIdCategory}
