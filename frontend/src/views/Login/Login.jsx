@@ -1,11 +1,17 @@
+import InputPassword from "../../components/common/InputPassword/InputPassword";
 import InputText from "../../components/common/InputText/InputText";
+import { inputText, inputPassword } from "./props";
 import { LoginSc } from "./style";
 
 export default function Login() {
   return (
     <LoginSc>
       <form>
-        <InputText placeholder={"gmail"} />
+        <InputText {...inputText} />
+        <InputPassword {...inputPassword} />
+        <span>¿Olvidaste tu password?</span>
+        <br />
+        <span>¿No tiene cuenta? Registrate</span>
       </form>
     </LoginSc>
   );
