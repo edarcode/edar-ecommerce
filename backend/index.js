@@ -34,6 +34,6 @@ conn.sync({ force: true }).then(() => {
     await loadMockSuppliers();
     await loadMockProducts();
     await loadMockBills();
-    console.log(`%s listening at ${3001}`); // eslint-disable-line no-console
+    console.log(`%s listening at ${PORT}`); // eslint-disable-line no-console
   });
 });
