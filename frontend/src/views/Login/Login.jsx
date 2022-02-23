@@ -1,3 +1,12 @@
+import InputText from "../../components/common/InputText/InputText";
+import { LoginSc } from "./style";
+
 export default function Login() {
-  return <main>login</main>;
+  return (
+    <LoginSc>
+      <form>
+        <InputText placeholder={"gmail"} />
+      </form>
+    </LoginSc>
+  );
 }

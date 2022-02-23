@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export const LoginSc = styled.main``;
+export const InputTextSc = styled.div``;
