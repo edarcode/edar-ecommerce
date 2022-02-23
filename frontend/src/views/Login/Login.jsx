@@ -1,3 +1,4 @@
+import { Button } from "../../components/common/Button/Button";
 import InputPassword from "../../components/common/InputPassword/InputPassword";
 import InputText from "../../components/common/InputText/InputText";
 import { inputText, inputPassword } from "./props";
@@ -12,6 +13,7 @@ export default function Login() {
         <span>¿Olvidaste tu password?</span>
         <br />
         <span>¿No tiene cuenta? Registrate</span>
+        <Button>Iniciar sesión</Button>
       </form>
     </LoginSc>
   );
