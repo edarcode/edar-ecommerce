@@ -7,4 +7,8 @@ export const Button = styled.button`
   color: ${white};
   border-radius: 3px;
   border: none;
+  cursor: pointer;
+  &:active {
+    transform: scale(1.05);
+  }
 `;

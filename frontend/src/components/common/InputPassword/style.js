@@ -7,6 +7,9 @@ export const InputPasswordSc = styled.div`
   .eye-off {
     display: none;
   }
+  .eye-on {
+    display: block;
+  }
   svg {
     padding: 2px;
     width: 80%;

@@ -22,7 +22,7 @@ export const LoginSc = styled.main`
     justify-content: start;
     gap: 5px;
     img {
-      width: 30px;
+      width: 40px;
       cursor: pointer;
     }
   }

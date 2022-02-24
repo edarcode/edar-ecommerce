@@ -17,7 +17,7 @@ export default function Login() {
         </Link>
         <Button type="button">Iniciar sesión</Button>
         <span className="login-gmail">
-          ¿Prefiere iniciar con
+          ¿Prefiere iniciar con sesión
           <img className="logo-gmail" src={gmail} alt="logo gmail" />?
         </span>
         <span className="form-login__register">
