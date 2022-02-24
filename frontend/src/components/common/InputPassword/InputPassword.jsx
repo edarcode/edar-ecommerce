@@ -3,21 +3,29 @@ import { action } from "../../../utils/action";
 import { InputPasswordSc } from "./style";
 import { BsEyeSlash, BsEye } from "react-icons/bs";
 import { useRef } from "react";
-import { bgNavbar } from "../../../consts/colors";
+import { bgNavbar, isRight, isWrong } from "../../../consts/colors";
 import { useIstrue } from "../../hooks/useIstrue";
 import { useEffect } from "react";
 
 export default function InputPassword({
+  err,
   placeholder,
   nameReducer,
   keyState,
   type,
 }) {
+  const outlineRight = `2px solid ${isRight}`;
+  const outlineWrong = `2px solid ${isWrong}`;
+  const style = { outline: (err[keyState] && outlineWrong) || outlineRight };
   const inputPassword = useRef(null);
   const input = useRef(null);
   const { isTrue, setIsTrue } = useIstrue();
   const dispatch = useDispatch();
   const state = useSelector((state) => state[nameReducer]);
+
+  useEffect(() => {
+    inputPassword.current.style.outline = "";
+  }, []);
 
   const handleOnChange = (e) => {
     const inputValue = e.target.value;
@@ -27,9 +35,9 @@ export default function InputPassword({
   const handleOnFocus = () => {
     inputPassword.current.style.outline = `2px solid ${bgNavbar}`;
   };
-
   const handleOnFocusOut = () => {
-    inputPassword.current.style.outline = "";
+    inputPassword.current.style.outline =
+      (err[keyState] && outlineWrong) || outlineRight;
   };
 
   const handleOnClickEye = () => {
@@ -41,7 +49,7 @@ export default function InputPassword({
   }, [isTrue]);
 
   return (
-    <InputPasswordSc ref={inputPassword}>
+    <InputPasswordSc style={style} ref={inputPassword}>
       <input
         ref={input}
         type="password"

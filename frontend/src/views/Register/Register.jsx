@@ -27,8 +27,8 @@ export default function Register() {
   return (
     <RegisterSc>
       <form onSubmit={handleOnSubmitRegister}>
-        <InputText {...inputText} />
-        <InputPassword {...inputPassword} />
+        <InputText err={err} {...inputText} />
+        <InputPassword err={err} {...inputPassword} />
         <span className="require">
           Mínimo 8 caracteres y al menos 1 mayuscula, 1 espacio, 1 caracter
           especial, y sobre todo fácil de recordar.

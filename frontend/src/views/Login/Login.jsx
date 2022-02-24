@@ -11,8 +11,8 @@ export default function Login() {
   return (
     <LoginSc>
       <form className="form-login">
-        <InputText {...inputText} />
-        <InputPassword {...inputPassword} />
+        <InputText {...inputText} err={{}} />
+        <InputPassword {...inputPassword} err={{}} />
         <Link to={"/"} className="forget-password">
           ¿Olvidó su password?
         </Link>
