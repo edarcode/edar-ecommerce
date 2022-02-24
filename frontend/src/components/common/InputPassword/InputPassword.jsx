@@ -14,30 +14,14 @@ export default function InputPassword({
   keyState,
   type,
 }) {
-  const outlineRight = `2px solid ${isRight}`;
-  const outlineWrong = `2px solid ${isWrong}`;
-  const style = { outline: (err[keyState] && outlineWrong) || outlineRight };
-  const inputPassword = useRef(null);
   const input = useRef(null);
   const { isTrue, setIsTrue } = useIstrue();
   const dispatch = useDispatch();
   const state = useSelector((state) => state[nameReducer]);
 
-  useEffect(() => {
-    inputPassword.current.style.outline = "";
-  }, []);
-
   const handleOnChange = (e) => {
     const inputValue = e.target.value;
     type && dispatch(action(type, inputValue));
-  };
-
-  const handleOnFocus = () => {
-    inputPassword.current.style.outline = `2px solid ${bgNavbar}`;
-  };
-  const handleOnFocusOut = () => {
-    inputPassword.current.style.outline =
-      (err[keyState] && outlineWrong) || outlineRight;
   };
 
   const handleOnClickEye = () => {
@@ -49,22 +33,20 @@ export default function InputPassword({
   }, [isTrue]);
 
   return (
-    <InputPasswordSc style={style} ref={inputPassword}>
+    <InputPasswordSc err={err.password}>
       <input
         ref={input}
         type="password"
         placeholder={placeholder}
         onChange={handleOnChange}
-        onFocus={handleOnFocus}
-        onBlur={handleOnFocusOut}
         value={keyState && state[keyState]}
       />
       <BsEye
-        className={isTrue ? "eye--on" : "eye-off"}
+        className={isTrue ? "eye-on" : "eye-off"}
         onClick={handleOnClickEye}
       />
       <BsEyeSlash
-        className={!isTrue ? "eye--on" : "eye-off"}
+        className={!isTrue ? "eye-on" : "eye-off"}
         onClick={handleOnClickEye}
       />
     </InputPasswordSc>

@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import { inputStyles } from "../../../styles/inputStyles";
 
-export const InputPasswordSc = styled.div`
+export const InputPasswordSc = styled.label`
   ${inputStyles};
-  grid-template-columns: 1fr 30px;
+  position: relative;
   .eye-off {
     display: none;
   }
   .eye-on {
-    display: block;
-  }
-  svg {
-    padding: 2px;
-    width: 80%;
-    height: 100%;
+    position: absolute;
+    bottom: calc(50% - 9.5px);
+    right: 8px;
     cursor: pointer;
+    width: 20px;
+    height: 20px;
   }
 `;
