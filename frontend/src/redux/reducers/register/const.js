@@ -1,0 +1,2 @@
+export const SET_EMAIL = "SET_EMAIL_REGISTER";
+export const SET_PASSWORD = "SET_PASSWORD_REGISTER";

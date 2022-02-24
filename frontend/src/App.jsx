@@ -10,6 +10,7 @@ import Login from "./views/Login/Login";
 import Store from "./views/Store/Store";
 import Client from "./views/Client/Client";
 import Admin from "./views/Admin/Admin";
+import Register from "./views/Register/Register";
 import {
   home,
   cart,
@@ -19,6 +20,7 @@ import {
   store,
   product,
   dashboard,
+  register,
 } from "./consts/pathRoutes";
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
           <Route path={contact} element={<Contact />} />
           <Route path={login} element={<Login />} />
           <Route path={cart} element={<Cart />} />
+          <Route path={register} element={<Register />} />
           <Route path={dashboard} element={<Dashboard />} />
           <Route path={product} element={<Product />} />
         </Route>
