@@ -3,8 +3,8 @@ import { bgNavbar } from "../../../consts/colors";
 
 export const SpinnerSc = styled.div`
   position: absolute;
-  top: calc(50vh - 80px);
-  left: calc(50vw - 80px);
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
   width: 100px;
   height: 100px;
   border-radius: 50%;
