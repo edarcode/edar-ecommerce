@@ -6,7 +6,7 @@ import { getAllProducts } from "../../../redux/reducers/products/actions";
 
 export default function Paged({ className }) {
   const dispatch = useDispatch();
-  const { pageCount } = useSelector((state) => state.products);
+  const { pageCount, page } = useSelector((state) => state.products);
   const { name, idCategory, min, max, order } = useSelector(
     (state) => state.filterOrderProducts
   );
@@ -33,6 +33,7 @@ export default function Paged({ className }) {
         activeLinkClassName="active"
         previousClassName="previous"
         nextClassName="next"
+        forcePage={page}
       />
     </PagedSc>
   );
