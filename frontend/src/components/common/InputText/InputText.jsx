@@ -18,7 +18,7 @@ export default function InputText({
   };
 
   return (
-    <InputTextSc err={err.email}>
+    <InputTextSc err={(state[keyState] === "" && "none") || err.email}>
       <input
         type="text"
         placeholder={placeholder}

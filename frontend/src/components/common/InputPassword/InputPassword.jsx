@@ -3,7 +3,6 @@ import { action } from "../../../utils/action";
 import { InputPasswordSc } from "./style";
 import { BsEyeSlash, BsEye } from "react-icons/bs";
 import { useRef } from "react";
-import { bgNavbar, isRight, isWrong } from "../../../consts/colors";
 import { useIstrue } from "../../hooks/useIstrue";
 import { useEffect } from "react";
 
@@ -33,7 +32,7 @@ export default function InputPassword({
   }, [isTrue]);
 
   return (
-    <InputPasswordSc err={err.password}>
+    <InputPasswordSc err={(state[keyState] === "" && "none") || err.password}>
       <input
         ref={input}
         type="password"
