@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { bgGradiente, white } from "../../../consts/colors";
+import { bgGradiente, bgWebsite, white } from "../../../consts/colors";
 
 export const Button = styled.button`
   background-image: ${bgGradiente};
@@ -11,4 +11,7 @@ export const Button = styled.button`
   &:active {
     transform: scale(1.05);
   }
+`;
+export const ButtonModal = styled(Button)`
+  background: ${bgWebsite};
 `;

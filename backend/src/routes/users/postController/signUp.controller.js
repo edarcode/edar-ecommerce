@@ -13,15 +13,15 @@ const signUp = async (req, res, next) => {
       if (!user.verifyEmail) {
         await sendVerifyEmail({ user, expiresIn: "150000" });
         res.json({
-          msg: "Already had an account, please verify your email by clicking the link sent to your email",
+          msg: "Ya posee una cuenta con nosotros, porfavor verifique su email dando click en el link enviado a su correo",
         });
       } else {
-        res.json({ msg: "Already exists" });
+        res.json({ msg: "Esta cuenta ya existe" });
       }
     } else {
-      await sendVerifyEmail({ user, expiresIn: "150000" });
+      await sendVerifyEmail({ user, expiresIn: "300000" });
       res.json({
-        msg: "Created successfully, please verify your email by clicking the link sent to your email",
+        msg: "Cuenta creada correctamente, porfavor verifique su email dando click en el link enviado a su correo",
       });
     }
   } catch (error) {

@@ -1,6 +1,6 @@
 import { action } from "../../../utils/action";
 import { axiosPost } from "../../../utils/axios";
-import { SET_RES_REGISTRO } from "./const";
+import { SET_RES_REGISTER } from "./const";
 
 export const createAccount = ({ setIsSpinner, data }) => {
   setIsSpinner(true);
@@ -10,6 +10,6 @@ export const createAccount = ({ setIsSpinner, data }) => {
       data,
     });
     setIsSpinner(false);
-    dispatch(action(SET_RES_REGISTRO, resRegister));
+    dispatch(action(SET_RES_REGISTER, resRegister));
   };
 };
