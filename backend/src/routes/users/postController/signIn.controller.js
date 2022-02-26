@@ -20,7 +20,7 @@ const signIn = async (req, res, next) => {
         });
       }
       const token = jwt.sign({ id: user.id }, SECRET, { expiresIn: "24h" });
-      res.json({ token });
+      res.json({ token, email });
     }
   } catch (error) {
     next(error);

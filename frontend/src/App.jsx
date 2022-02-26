@@ -21,8 +21,13 @@ import {
   product,
   dashboard,
   register,
+  profile,
 } from "./consts/pathRoutes";
+import { useInitStorage } from "./components/hooks/useInitStorage";
+import Account from "./components/client/Account/Account";
+import AuthClient from "./components/Auth/AuthClient/AuthClient";
 function App() {
+  useInitStorage();
   return (
     <AppSc className="App">
       <Routes>
@@ -33,6 +38,14 @@ function App() {
           <Route path={catalogue} element={<Catalogue />} />
           <Route path={contact} element={<Contact />} />
           <Route path={login} element={<Login />} />
+          <Route
+            path={profile}
+            element={
+              <AuthClient>
+                <Account />
+              </AuthClient>
+            }
+          />
           <Route path={cart} element={<Cart />} />
           <Route path={register} element={<Register />} />
           <Route path={dashboard} element={<Dashboard />} />

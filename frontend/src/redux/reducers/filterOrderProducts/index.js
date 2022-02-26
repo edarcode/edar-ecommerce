@@ -8,7 +8,7 @@ import {
 
 const initialState = {
   name: "",
-  idCategory: null,
+  idCategory: 0,
   min: 0,
   max: 0,
   order: null,
