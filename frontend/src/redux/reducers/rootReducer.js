@@ -4,6 +4,7 @@ import { filterOrderProducts } from "./filterOrderProducts";
 import { categories } from "./categories";
 import { login } from "./login";
 import { register } from "./register";
+import { storage } from "./storage";
 
 export const rootReducer = combineReducers({
   products,
@@ -11,4 +12,5 @@ export const rootReducer = combineReducers({
   categories,
   login,
   register,
+  storage,
 });

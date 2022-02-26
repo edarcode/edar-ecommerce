@@ -7,7 +7,7 @@ export const inputText = {
   type: SET_EMAIL,
 };
 export const inputPassword = {
-  placeholder: "Password           Amo edarcode!",
+  placeholder: "Password           Amo programar!",
   nameReducer: "register",
   keyState: "password",
   type: SET_PASSWORD,

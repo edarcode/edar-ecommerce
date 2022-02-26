@@ -22,7 +22,9 @@ import {
   dashboard,
   register,
 } from "./consts/pathRoutes";
+import { useInitStorage } from "./components/hooks/useInitStorage";
 function App() {
+  useInitStorage();
   return (
     <AppSc className="App">
       <Routes>

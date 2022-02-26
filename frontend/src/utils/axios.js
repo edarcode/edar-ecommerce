@@ -7,6 +7,9 @@ const instanceAxiosPost = axios.create({
 const instanceAxiosGet = axios.create({
   baseURL: process.env.REACT_APP_BACKEND,
   method: "GET",
+  headers: {
+    token: localStorage.getItem("token"),
+  },
 });
 
 export const axiosPost = async (config) => {

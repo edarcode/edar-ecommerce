@@ -42,7 +42,7 @@ export default function Register() {
       dispatch(action(SET_RES_REGISTER, {}));
     } else {
       dispatch(action(RESET_STATE_REGISTER));
-      navegateToLogin("/login");
+      navegateToLogin(login);
     }
   };
 
