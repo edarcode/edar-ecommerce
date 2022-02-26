@@ -59,7 +59,9 @@ export default function Login() {
       </form>
       {(isLogin === false && (
         <Successfully
-          content={"Email o password incorrectos"}
+          content={
+            "Error; recuerda verificar tu cuenta y digitar tus credenciales correctamente"
+          }
           onClick={handleOnClickSuccessfully}
         />
       )) ||
