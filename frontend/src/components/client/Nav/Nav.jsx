@@ -9,7 +9,7 @@ import {
   contact,
   home,
   login,
-  profile,
+  account,
   store,
 } from "../../../consts/pathRoutes";
 
@@ -27,7 +27,7 @@ export default function Nav({ className, setIsTrue }) {
         />
         <Li to={contact} text={"Contacto"} onClick={() => setIsTrue(false)} />
         <Li
-          to={(email && profile) || login}
+          to={(email && account) || login}
           text={(email && email) || <AiOutlineLogin />}
           onClick={() => setIsTrue(false)}
         />

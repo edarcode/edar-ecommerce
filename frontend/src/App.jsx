@@ -21,11 +21,11 @@ import {
   product,
   dashboard,
   register,
-  profile,
+  account,
 } from "./consts/pathRoutes";
 import { useInitStorage } from "./components/hooks/useInitStorage";
 import Account from "./components/client/Account/Account";
-import AuthClient from "./components/Auth/AuthClient/AuthClient";
+import AuthClient from "./components/auth/AuthClient/AuthClient";
 function App() {
   useInitStorage();
   return (
@@ -39,7 +39,7 @@ function App() {
           <Route path={contact} element={<Contact />} />
           <Route path={login} element={<Login />} />
           <Route
-            path={profile}
+            path={account}
             element={
               <AuthClient>
                 <Account />
