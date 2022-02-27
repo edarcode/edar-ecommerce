@@ -7,3 +7,4 @@ export default function AuthClient({ children }) {
   if (!token) return <Navigate to={login} replace />;
   return children;
 }
+//Auth
