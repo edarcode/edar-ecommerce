@@ -13,13 +13,22 @@ import { getToken } from "../../redux/reducers/login/actions";
 import Successfully from "../../components/common/Successfully/Successfully";
 import { action } from "../../utils/action";
 import { CLEAN_LOGIN, SET_IS_LOGIN } from "../../redux/reducers/login/const";
+import { useIstrue } from "../../components/hooks/useIstrue";
+import Alert from "../../components/pop-ups/Alert/Alert";
+import { axiosPost } from "../../utils/axios";
+import Spinner from "../../components/common/Spinner/Spinner";
 /* import Google from "../../components/client/Google/Google"; */
+
+const errEmail = "Digite su email correctamente y vuelva a interlo";
 
 export default function Login() {
   const dispatch = useDispatch();
   const navigateToHome = useNavigate();
+  const { isTrue, setIsTrue } = useIstrue();
   const { email, password, isLogin } = useSelector((state) => state.login);
   const [err, setErr] = useState(validateLogin({ email, password }));
+  const [resSendEmail, setResSendEmail] = useState("");
+  const [isSpinner, setIsSpinner] = useState(false);
 
   useEffect(() => {
     setErr(validateLogin({ email, password }));
@@ -41,14 +50,30 @@ export default function Login() {
     dispatch(action(SET_IS_LOGIN, null));
   };
 
+  const handleOnClickForgetPassword = async () => {
+    setIsTrue(true);
+    if (!err.email) {
+      setIsSpinner(true);
+      const res = await axiosPost({
+        url: "/users/reset/password",
+        data: { email },
+      });
+      setIsSpinner(false);
+      setResSendEmail(res);
+    }
+  };
+  const handleOnClickAlert = (e) => {
+    setIsTrue(false);
+  };
+
   return (
     <LoginSc>
       <form className="form-login" onSubmit={handleOnSubmitLogin}>
         <InputText {...inputText} err={err} />
         <InputPassword {...inputPassword} err={err} />
-        <Link to={"/"} className="forget-password">
+        <span className="forget-password" onClick={handleOnClickForgetPassword}>
           ¿Olvidó su password?
-        </Link>
+        </span>
         <Button>Iniciar sesión</Button>
         <span className="login-gmail">
           ¿Prefiere iniciar sesión con
@@ -67,6 +92,13 @@ export default function Login() {
         />
       )) ||
         null}
+      {isTrue && !isSpinner && (
+        <Alert
+          msg={(err.email && errEmail) || resSendEmail.msg}
+          onClick={handleOnClickAlert}
+        />
+      )}
+      {isSpinner && <Spinner />}
     </LoginSc>
   );
 }

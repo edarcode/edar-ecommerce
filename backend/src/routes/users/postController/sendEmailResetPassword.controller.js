@@ -15,7 +15,7 @@ const sendEmailResetPassword = async (req, res, next) => {
         from: '"👻 Reset password 👻" <testedarcode@gmail.com>', // sender address
         to: user.email, // list of receivers
         subject: "✔ Reset password ✔", // Subject line
-        text: `${URL_FRONT}/reset/password/:${token}`,
+        text: `${URL_FRONT}/reset/password/${token}`,
       });
     }
     res.json({
