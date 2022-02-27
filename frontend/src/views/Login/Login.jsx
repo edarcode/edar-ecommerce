@@ -62,7 +62,7 @@ export default function Login() {
       setResSendEmail(res);
     }
   };
-  const handleOnClickAlert = (e) => {
+  const handleOnClickAlert = () => {
     setIsTrue(false);
   };
 
