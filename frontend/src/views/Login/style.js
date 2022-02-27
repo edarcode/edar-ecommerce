@@ -14,6 +14,7 @@ export const LoginSc = styled.main`
     }
     .forget-password {
       margin-bottom: 40px;
+      justify-self: start;
     }
   }
   .login-gmail {

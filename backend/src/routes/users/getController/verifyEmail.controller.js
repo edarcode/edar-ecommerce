@@ -11,7 +11,7 @@ const verifyEmail = async (req, res, next) => {
     if (!user) return res.json({ msg: "Unauthorized" });
     await user.update({ verifyEmail: true });
     await user.save();
-    res.json({ msg: "Email valid" });
+    res.sendFile(__dirname + "/welcome.html");
   } catch (error) {
     res.json({ msg: "Unauthorized" });
   }

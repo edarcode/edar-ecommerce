@@ -7,7 +7,7 @@ import { isTokenAuthorized } from "../../utils/isTokenAuthorized";
 export const useInitStorage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    const callbackTemp = async () => {
+    const initStorage = async () => {
       const isAuthorized = await isTokenAuthorized();
       if (isAuthorized) {
         const email = localStorage.getItem("email");
@@ -19,6 +19,6 @@ export const useInitStorage = () => {
         localStorage.removeItem("email");
       }
     };
-    callbackTemp();
+    initStorage();
   }, [dispatch]);
 };
