@@ -17,7 +17,6 @@ import { useIstrue } from "../../components/hooks/useIstrue";
 import Alert from "../../components/pop-ups/Alert/Alert";
 import { axiosPost } from "../../utils/axios";
 import Spinner from "../../components/common/Spinner/Spinner";
-/* import Google from "../../components/client/Google/Google"; */
 
 const errEmail = "Digite su email correctamente y vuelva a interlo";
 
