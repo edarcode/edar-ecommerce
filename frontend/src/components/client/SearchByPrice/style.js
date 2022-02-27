@@ -20,7 +20,7 @@ export const SearchByPriceSc = styled.div`
   .min,
   .max {
     position: absolute;
-    bottom: 0px;
+    top: -5px;
   }
   .min {
     left: 0;
@@ -31,9 +31,9 @@ export const SearchByPriceSc = styled.div`
   .left,
   .right {
     position: absolute;
-    top: 0;
-    width: 12px;
-    height: 12px;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
   }
   .right {
     left: 5px;
