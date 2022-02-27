@@ -13,6 +13,7 @@ import { getToken } from "../../redux/reducers/login/actions";
 import Successfully from "../../components/common/Successfully/Successfully";
 import { action } from "../../utils/action";
 import { CLEAN_LOGIN, SET_IS_LOGIN } from "../../redux/reducers/login/const";
+/* import Google from "../../components/client/Google/Google"; */
 
 export default function Login() {
   const dispatch = useDispatch();

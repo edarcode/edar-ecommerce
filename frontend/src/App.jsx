@@ -48,11 +48,12 @@ function App() {
           />
           <Route path={cart} element={<Cart />} />
           <Route path={register} element={<Register />} />
-          <Route path={dashboard} element={<Dashboard />} />
           <Route path={product} element={<Product />} />
         </Route>
         {/* ------------------ADMIN------------------------------ */}
-        <Route path="/admin" element={<Admin />}></Route>
+        <Route path="/admin" element={<Admin />}>
+          <Route path={dashboard} element={<Dashboard />} />
+        </Route>
       </Routes>
     </AppSc>
   );
