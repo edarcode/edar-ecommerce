@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ProductSc } from "./style";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetailProduct } from "../../redux/reducers/product/actions";
@@ -8,15 +8,20 @@ import Gallery from "../../components/common/Gallery/Gallery";
 
 export default function Product() {
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const { images, ...otros } = useSelector((state) => state.product.product);
   useEffect(() => {
-    dispatch(getDetailProduct({ id }));
+    dispatch(getDetailProduct({ id, setLoading }));
   }, [dispatch, id]);
   return (
     <ProductSc>
-      <Gallery images={images && images.map(({ url }) => url)} />
-      <DetailProduct {...otros} className="detail-product" />
+      {loading && (
+        <>
+          <Gallery images={images && images.map(({ url }) => url)} />
+          <DetailProduct {...otros} className="detail-product" />
+        </>
+      )}
     </ProductSc>
   );
 }
