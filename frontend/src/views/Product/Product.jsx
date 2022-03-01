@@ -9,14 +9,14 @@ import Gallery from "../../components/common/Gallery/Gallery";
 export default function Product() {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const { images } = useSelector((state) => state.product.product);
+  const { images, ...otros } = useSelector((state) => state.product.product);
   useEffect(() => {
     dispatch(getDetailProduct({ id }));
   }, [dispatch, id]);
   return (
     <ProductSc>
       <Gallery images={images && images.map(({ url }) => url)} />
-      <DetailProduct />
+      <DetailProduct {...otros} />
     </ProductSc>
   );
 }

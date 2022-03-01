@@ -5,10 +5,12 @@ import { gridCenter } from "../../../styles/gridCenter";
 
 export const GallerySc = styled.article`
   width: 300px;
-  height: 500px;
+  height: 450px;
   ${gridCenter};
   grid-template-rows: 80% 20%;
   background-color: ${white};
+  border-radius: 3px;
+  overflow: hidden;
   .main-image {
     max-height: 100%;
     object-fit: contain;
