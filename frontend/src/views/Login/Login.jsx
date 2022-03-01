@@ -4,7 +4,6 @@ import InputText from "../../components/common/InputText/InputText";
 import { inputText, inputPassword } from "./props";
 import { LoginSc } from "./style";
 import { Link, useNavigate } from "react-router-dom";
-import gmail from "../../assets/gmail.svg";
 import { home, register } from "../../consts/pathRoutes";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
@@ -17,6 +16,7 @@ import { useIstrue } from "../../components/hooks/useIstrue";
 import Alert from "../../components/pop-ups/Alert/Alert";
 import { axiosPost } from "../../utils/axios";
 import Spinner from "../../components/common/Spinner/Spinner";
+import gmail from "../../assets/gmail.svg";
 
 const errEmail = "Digite su email correctamente y vuelva a interlo";
 
@@ -76,7 +76,7 @@ export default function Login() {
         <Button>Iniciar sesión</Button>
         <span className="login-gmail">
           ¿Prefiere iniciar sesión con
-          <img className="logo-gmail" src={gmail} alt="logo gmail" />?
+          <img src={gmail} alt="logo gmail" /> ?
         </span>
         <span className="form-login__register">
           ¿No tiene cuenta? <Link to={register}>Registrarse</Link>

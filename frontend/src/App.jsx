@@ -5,7 +5,7 @@ import Cart from "./views/Cart/Cart";
 import Catalogue from "./views/Catalogue/Catalogue";
 import Contact from "./views/Contact/Contact";
 import Dashboard from "./views/Dashboard/Dashboard";
-import Product from "./views/Product/DetailProduct";
+import Product from "./views/Product/Product";
 import Login from "./views/Login/Login";
 import Store from "./views/Store/Store";
 import Client from "./views/Client/Client";
@@ -25,8 +25,9 @@ import {
 } from "./consts/pathRoutes";
 import { useInitStorage } from "./components/hooks/useInitStorage";
 import Account from "./components/client/Account/Account";
-import AuthClient from "./components/Auth/AuthClient/AuthClient";
+import AuthClient from "./components/oe/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
+
 function App() {
   useInitStorage();
   return (
@@ -49,7 +50,7 @@ function App() {
           />
           <Route path={cart} element={<Cart />} />
           <Route path={register} element={<Register />} />
-          <Route path={product} element={<Product />} />
+          <Route path={`${product}/:id`} element={<Product />} />
           <Route path="/reset/password/:token" element={<ResetPassword />} />
         </Route>
         {/* ------------------ADMIN------------------------------ */}
