@@ -16,7 +16,7 @@ export default function Product() {
   return (
     <ProductSc>
       <Gallery images={images && images.map(({ url }) => url)} />
-      <DetailProduct {...otros} />
+      <DetailProduct {...otros} className="detail-product" />
     </ProductSc>
   );
 }

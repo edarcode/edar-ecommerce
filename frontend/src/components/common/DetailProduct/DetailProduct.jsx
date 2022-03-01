@@ -2,28 +2,36 @@ import { DetailProductSc } from "./style";
 import { CgShoppingCart } from "react-icons/cg";
 import { useState } from "react";
 
-export default function DetailProduct({ name, price, description, stock }) {
+export default function DetailProduct({
+  name,
+  price,
+  description,
+  stock,
+  className,
+}) {
   const [amount, setAmount] = useState(1);
   const handleOnChangeAmount = (e) => {
     const amount = e.target.value;
     setAmount(amount);
   };
   return (
-    <DetailProductSc>
+    <DetailProductSc className={className}>
       <h1>{name}</h1>
-      <label htmlFor="amount" className="amount">
-        <span>Cantidad</span>
-        <select name="amount" id="amount" onChange={handleOnChangeAmount}>
-          {generatorArray(10).map((item) => (
-            <option key={item} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
+      <section className="buy">
+        <label htmlFor="amount" className="amount">
+          <span>Cantidad</span>
+          <select name="amount" id="amount" onChange={handleOnChangeAmount}>
+            {generatorArray(10).map((item) => (
+              <option key={item} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+        </label>
         <span>$ {price * amount}</span>
         <CgShoppingCart />
-      </label>
-      <p>{description}</p>
+      </section>
+      <p className="description">{description}</p>
     </DetailProductSc>
   );
 }
