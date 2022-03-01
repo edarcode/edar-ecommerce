@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { bgNavbar } from "../../../consts/colors";
+import { bgBox, bgNavbar } from "../../../consts/colors";
 import { gridCenter } from "../../../styles/gridCenter";
+import { scrollStyles } from "../../../styles/scrollStyles";
 
 export const DetailProductSc = styled.article`
   width: 300px;
@@ -24,6 +25,9 @@ export const DetailProductSc = styled.article`
     margin: 0;
     height: 100%;
     overflow-y: auto;
+    scrollbar-color: ${bgBox} rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    ${scrollStyles};
   }
   .amount {
     ${gridCenter};

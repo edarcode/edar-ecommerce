@@ -8,6 +8,8 @@ body {
   margin: 0px;
   font-size: 1.8rem;
   font-family: sans-serif;
+  scrollbar-color: #3b3b3b rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
 }
 li {
   list-style: none;
@@ -25,4 +27,33 @@ a {
 svg {
   width: 30px;
   height: 30px;
+}
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 10px;
+  background-color: #313132;
+}
+
+body::-webkit-scrollbar-button:increment {
+  display: none;
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b;
+  width: 100%;
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
