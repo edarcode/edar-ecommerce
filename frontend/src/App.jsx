@@ -25,7 +25,7 @@ import {
 } from "./consts/pathRoutes";
 import { useInitStorage } from "./components/hooks/useInitStorage";
 import Account from "./components/client/Account/Account";
-import AuthClient from "./components/oe/AuthClient/AuthClient";
+import AuthClient from "./components/auth/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
 
 function App() {
