@@ -18,8 +18,8 @@ export default function DetailProduct({
   return (
     <DetailProductSc className={className}>
       <h1>{name}</h1>
-      <section className="buy">
-        <label htmlFor="amount" className="amount">
+      <section className="amount">
+        <label htmlFor="amount">
           <span>Cantidad</span>
           <select name="amount" id="amount" onChange={handleOnChangeAmount}>
             {generatorArray(10).map((item) => (
