@@ -50,7 +50,7 @@ function App() {
           />
           <Route path={cart} element={<Cart />} />
           <Route path={register} element={<Register />} />
-          <Route path={product} element={<Product />} />
+          <Route path={`${product}/:id`} element={<Product />} />
           <Route path="/reset/password/:token" element={<ResetPassword />} />
         </Route>
         {/* ------------------ADMIN------------------------------ */}

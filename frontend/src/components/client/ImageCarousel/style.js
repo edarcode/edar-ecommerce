@@ -5,9 +5,14 @@ export const ImageCarouselSc = styled.div`
   height: 300px;
   display: flex;
   align-items: center;
-  img {
-    object-fit: contain;
-    max-height: 100%;
+  a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    img {
+      max-height: 100%;
+      object-fit: contain;
+    }
   }
   .left,
   .right {

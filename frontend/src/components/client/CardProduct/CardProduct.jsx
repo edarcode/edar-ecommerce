@@ -5,16 +5,22 @@ import { CardProductSc } from "./style";
 
 export default function CardProduct({ id, name, price, images }) {
   const [indexImage, setIndexImage] = useState(0);
+  const sizeImages = images.length - 1;
 
   const handleOnClickForward = () => {
-    const sizeImages = images.length - 1;
+    if (indexImage === sizeImages) {
+      return setIndexImage(0);
+    }
     if (indexImage < sizeImages) {
-      setIndexImage(indexImage + 1);
+      setIndexImage((state) => state + 1);
     }
   };
   const handleOnClickBack = () => {
+    if (indexImage === 0) {
+      return setIndexImage(sizeImages);
+    }
     if (indexImage > 0) {
-      setIndexImage(indexImage - 1);
+      setIndexImage((state) => state - 1);
     }
   };
 
@@ -25,6 +31,7 @@ export default function CardProduct({ id, name, price, images }) {
         <h6>{name}</h6>
       </header>
       <ImageCarousel
+        id={id}
         image={images[indexImage].url}
         forward={handleOnClickForward}
         back={handleOnClickBack}
