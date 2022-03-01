@@ -5,6 +5,7 @@ import { getDetailProduct } from "../../redux/reducers/product/actions";
 import { useParams } from "react-router-dom";
 import DetailProduct from "../../components/common/DetailProduct/DetailProduct";
 import Gallery from "../../components/common/Gallery/Gallery";
+import Spinner from "../../components/common/Spinner/Spinner";
 
 export default function Product() {
   const dispatch = useDispatch();
@@ -16,12 +17,12 @@ export default function Product() {
   }, [dispatch, id]);
   return (
     <ProductSc>
-      {loading && (
+      {(loading && (
         <section className="container-gallery-detail">
           <Gallery images={images && images.map(({ url }) => url)} />
           <DetailProduct {...otros} className="detail-product" />
         </section>
-      )}
+      )) || <Spinner />}
     </ProductSc>
   );
 }
