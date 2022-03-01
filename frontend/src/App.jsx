@@ -27,6 +27,7 @@ import { useInitStorage } from "./components/hooks/useInitStorage";
 import Account from "./components/client/Account/Account";
 import AuthClient from "./components/Auth/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
+
 function App() {
   useInitStorage();
   return (
