@@ -17,10 +17,10 @@ export default function Product() {
   return (
     <ProductSc>
       {loading && (
-        <>
+        <section className="container-gallery-detail">
           <Gallery images={images && images.map(({ url }) => url)} />
           <DetailProduct {...otros} className="detail-product" />
-        </>
+        </section>
       )}
     </ProductSc>
   );

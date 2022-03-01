@@ -26,21 +26,17 @@ export const DetailProductSc = styled.article`
     height: 100%;
     overflow-y: auto;
   }
-  .buy {
+  .amount {
+    ${gridCenter};
+    justify-items: start;
     width: 100%;
-    ${flexCenter};
-    justify-content: start;
-    gap: 8px;
-    .price {
-      margin-left: auto;
-    }
+    grid-template-columns: 1fr auto;
     select {
       cursor: pointer;
       background: transparent;
       border: none;
       color: inherit;
       padding: 10px;
-      margin-left: 10px;
     }
     select:focus {
       outline: 2px solid ${bgNavbar};
