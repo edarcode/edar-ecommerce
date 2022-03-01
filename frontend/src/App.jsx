@@ -5,7 +5,7 @@ import Cart from "./views/Cart/Cart";
 import Catalogue from "./views/Catalogue/Catalogue";
 import Contact from "./views/Contact/Contact";
 import Dashboard from "./views/Dashboard/Dashboard";
-import Product from "./views/Product/DetailProduct";
+import Product from "./views/Product/Product";
 import Login from "./views/Login/Login";
 import Store from "./views/Store/Store";
 import Client from "./views/Client/Client";

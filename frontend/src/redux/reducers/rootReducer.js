@@ -6,6 +6,7 @@ import { login } from "./login";
 import { register } from "./register";
 import { storage } from "./storage";
 import { resetPassword } from "./resetPassword";
+import { product } from "./product";
 
 export const rootReducer = combineReducers({
   products,
@@ -15,4 +16,5 @@ export const rootReducer = combineReducers({
   register,
   storage,
   resetPassword,
+  product,
 });
