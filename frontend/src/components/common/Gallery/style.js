@@ -11,6 +11,10 @@ export const GallerySc = styled.article`
   background-color: ${white};
   border-radius: 3px;
   overflow: hidden;
+  @media (min-width: 768px) {
+    width: 400px;
+    height: 550px;
+  }
   .main-image {
     max-height: 100%;
     object-fit: contain;
