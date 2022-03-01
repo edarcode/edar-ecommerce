@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { bgNavbar } from "../../../consts/colors";
-import { flexCenter } from "../../../styles/flexCenter";
 import { gridCenter } from "../../../styles/gridCenter";
 
 export const DetailProductSc = styled.article`
