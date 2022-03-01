@@ -43,6 +43,7 @@ export const DetailProductSc = styled.article`
       border: none;
       color: inherit;
       padding: 10px;
+      margin-left: 7px;
     }
     select:focus {
       outline: 2px solid ${bgNavbar};
