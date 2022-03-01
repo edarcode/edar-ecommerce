@@ -32,7 +32,7 @@ export default function DetailProduct({
         <span className="price">$ {price * amount}</span>
       </section>
       <Button className="btn-buy">
-        <span>Comprar </span>
+        <span>Agregar </span>
         <CgShoppingCart />
       </Button>
       <p className="description">{description}</p>
