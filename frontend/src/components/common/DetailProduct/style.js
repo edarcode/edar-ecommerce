@@ -8,12 +8,14 @@ export const DetailProductSc = styled.article`
   height: 450px;
   padding: 8px;
   ${gridCenter};
+  gap: 5px;
   grid-template-rows: auto auto 1fr;
   h1 {
-    margin-top: 0;
+    margin: 0;
     font-size: 1.6rem;
   }
   .description {
+    margin: 0;
     height: 100%;
     overflow-y: auto;
     align-self: start;
