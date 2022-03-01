@@ -5,9 +5,9 @@ export const ProductSc = styled.main`
   ${gridCenter};
   .container-gallery-detail {
     ${gridCenter};
+    gap: 10px;
     @media (min-width: 768px) {
       justify-items: end;
-      gap: 8px;
       grid-template-columns: 1fr 1fr;
     }
   }
