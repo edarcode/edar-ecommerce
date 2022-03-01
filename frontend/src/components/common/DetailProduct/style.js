@@ -5,12 +5,15 @@ import { scrollStyles } from "../../../styles/scrollStyles";
 
 export const DetailProductSc = styled.article`
   width: 300px;
-  height: 450px;
   padding: 8px;
   ${gridCenter};
   justify-items: start;
   gap: 15px;
   grid-template-rows: auto auto auto 1fr;
+  @media (min-width: 768px) {
+    width: 400px;
+    height: 550px;
+  }
   h1 {
     margin: 0;
     font-size: 2rem;
