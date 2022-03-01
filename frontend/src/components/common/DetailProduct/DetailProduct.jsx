@@ -1,6 +1,7 @@
 import { DetailProductSc } from "./style";
 import { CgShoppingCart } from "react-icons/cg";
 import { useState } from "react";
+import { Button } from "../Button/Button";
 
 export default function DetailProduct({
   name,
@@ -28,9 +29,12 @@ export default function DetailProduct({
             ))}
           </select>
         </label>
-        <span>$ {price * amount}</span>
-        <CgShoppingCart />
+        <span className="price">$ {price * amount}</span>
       </section>
+      <Button className="btn-buy">
+        <span>Comprar </span>
+        <CgShoppingCart />
+      </Button>
       <p className="description">{description}</p>
     </DetailProductSc>
   );
