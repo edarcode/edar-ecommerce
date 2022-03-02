@@ -20,7 +20,7 @@ export default function Product() {
       {(loading && (
         <section className="container-gallery-detail">
           <Gallery images={images && images.map(({ url }) => url)} />
-          <DetailProduct {...otros} className="detail-product" />
+          <DetailProduct id={id} {...otros} className="detail-product" />
         </section>
       )) || <Spinner />}
     </ProductSc>

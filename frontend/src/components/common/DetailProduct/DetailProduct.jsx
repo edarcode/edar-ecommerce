@@ -2,18 +2,26 @@ import { DetailProductSc } from "./style";
 import { CgShoppingCart } from "react-icons/cg";
 import { useState } from "react";
 import { Button } from "../Button/Button";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../redux/reducers/cart/actions";
 
 export default function DetailProduct({
+  id,
   name,
   price,
   description,
   stock,
   className,
 }) {
+  const dispatch = useDispatch();
   const [amount, setAmount] = useState(1);
   const handleOnChangeAmount = (e) => {
-    const amount = e.target.value;
+    const amount = parseInt(e.target.value);
     setAmount(amount);
+  };
+
+  const handleOnClickAddToCart = () => {
+    dispatch(addToCart({ [id]: amount }));
   };
   return (
     <DetailProductSc className={className}>
@@ -31,7 +39,7 @@ export default function DetailProduct({
         </label>
         <span className="price">$ {price * amount}</span>
       </section>
-      <Button className="btn-buy">
+      <Button className="btn-buy" onClick={handleOnClickAddToCart}>
         <span>Agregar </span>
         <CgShoppingCart />
       </Button>

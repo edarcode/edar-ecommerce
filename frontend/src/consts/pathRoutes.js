@@ -8,3 +8,4 @@ export const login = "/login";
 export const account = "/account";
 export const register = "/register";
 export const store = "/store";
+export const resetPassword = "/reset/password";
