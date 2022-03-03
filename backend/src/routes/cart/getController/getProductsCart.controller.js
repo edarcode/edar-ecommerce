@@ -7,23 +7,16 @@ const getCart = async (req, res, next) => {
     const objCart = JSON.parse(cart);
     const cartProducts = [];
     for (const key in objCart) {
-      const value = objCart[key];
+      const amount = objCart[key];
       if (
-        typeof value === "number" &&
-        !isNaN(value) &&
+        typeof amount === "number" &&
+        !isNaN(amount) &&
         typeof parseInt(key) === "number" &&
         !isNaN(key)
       ) {
         const product = await Product.findOne({
           where: { id: key, state: true },
-          attributes: [
-            "id",
-            "name",
-            "description",
-            "price",
-            "stock",
-            "discount",
-          ],
+          attributes: ["id", "name", "price", "stock", "discount"],
           include: [
             {
               model: Image,
@@ -32,7 +25,17 @@ const getCart = async (req, res, next) => {
             },
           ],
         });
-        product && cartProducts.push(product);
+        const { id, name, price, stock, discount } = product;
+        product &&
+          cartProducts.push({
+            id,
+            name,
+            price,
+            stock,
+            discount,
+            amount,
+            total: product["price"] * amount,
+          });
       }
     }
     res.json(cartProducts);
