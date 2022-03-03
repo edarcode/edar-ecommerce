@@ -2,8 +2,11 @@ import { useState } from "react";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
 import { CgShoppingCart } from "react-icons/cg";
 import { CardProductSc } from "./style";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../redux/reducers/cart/actions";
 
 export default function CardProduct({ id, name, price, images }) {
+  const dispatch = useDispatch();
   const [indexImage, setIndexImage] = useState(0);
   const sizeImages = images.length - 1;
 
@@ -24,6 +27,10 @@ export default function CardProduct({ id, name, price, images }) {
     }
   };
 
+  const handleOnClickAddCart = () => {
+    dispatch(addToCart({ [id]: 1 }));
+  };
+
   if (!id) return null;
   return (
     <CardProductSc>
@@ -37,7 +44,7 @@ export default function CardProduct({ id, name, price, images }) {
         back={handleOnClickBack}
       />
       <footer>
-        ${price} <CgShoppingCart />
+        ${price} <CgShoppingCart onClick={handleOnClickAddCart} />
       </footer>
     </CardProductSc>
   );

@@ -22,14 +22,17 @@ import {
   dashboard,
   register,
   account,
+  resetPassword,
 } from "./consts/pathRoutes";
 import { useInitStorage } from "./components/hooks/useInitStorage";
 import Account from "./components/client/Account/Account";
 import AuthClient from "./components/auth/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
+import { useInitCartStorage } from "./components/hooks/useInitCartStorage";
 
 function App() {
   useInitStorage();
+  useInitCartStorage();
   return (
     <AppSc className="App">
       <Routes>
@@ -51,7 +54,7 @@ function App() {
           <Route path={cart} element={<Cart />} />
           <Route path={register} element={<Register />} />
           <Route path={`${product}/:id`} element={<Product />} />
-          <Route path="/reset/password/:token" element={<ResetPassword />} />
+          <Route path={`${resetPassword}/:token`} element={<ResetPassword />} />
         </Route>
         {/* ------------------ADMIN------------------------------ */}
         <Route path="/admin" element={<Admin />}>

@@ -1,4 +1,4 @@
-import { GoogleLogin } from "react-google-login";
+import { GoogleLogin, useGoogleLogin } from "react-google-login";
 import email from "../../../assets/gmail.svg";
 const { REACT_APP_GOOGLE_ID } = process.env;
 
@@ -10,15 +10,19 @@ export default function GoogleLoginn() {
   const onFailure = (res) => {
     console.log(res);
   };
+  const { signIn } = useGoogleLogin({
+    onSuccess,
+    onFailure,
+    clientId: REACT_APP_GOOGLE_ID,
+    accessType: "offline",
+    cookiePolicy: "single_host_origin",
+  });
   return (
     <GoogleLogin
       clientId={REACT_APP_GOOGLE_ID}
-      onSuccess={onSuccess}
-      onFailure={onFailure}
-      cookiePolicy={"single_host_origin"}
       render={(renderProps) => (
         <button
-          onClick={renderProps.onClick}
+          onClick={signIn}
           disabled={renderProps.disabled}
           style={{
             padding: "0",
