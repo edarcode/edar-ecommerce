@@ -4,9 +4,12 @@ import { CgShoppingCart } from "react-icons/cg";
 import { CardProductSc } from "./style";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/reducers/cart/actions";
+import { useNavigate } from "react-router-dom";
+import { cart } from "../../../consts/pathRoutes";
 
 export default function CardProduct({ id, name, price, images }) {
   const dispatch = useDispatch();
+  const navigateToCart = useNavigate();
   const [indexImage, setIndexImage] = useState(0);
   const sizeImages = images.length - 1;
 
@@ -29,6 +32,7 @@ export default function CardProduct({ id, name, price, images }) {
 
   const handleOnClickAddCart = () => {
     dispatch(addToCart({ [id]: 1 }));
+    navigateToCart(cart);
   };
 
   if (!id) return null;

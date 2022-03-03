@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { updateCart } from "../../../redux/reducers/cart/actions";
+import { deleteCart, updateCart } from "../../../redux/reducers/cart/actions";
 import { generatorArray } from "../../../utils/generatorArray";
 import { CardProductCartSc } from "./style";
 import { Link } from "react-router-dom";
@@ -13,14 +13,13 @@ export default function CardProductCart({ id, name, images, amount, total }) {
     const amount = parseInt(e.target.value);
     dispatch(updateCart({ id, amount }));
   };
+  const handleOnClickDeleteCart = (e) => {
+    dispatch(deleteCart({ id }));
+  };
 
   if (!id) return null;
   return (
     <CardProductCartSc>
-      <Link to={`${product}/${id}`}>
-        <img src={images[0].url} alt="" />
-      </Link>
-      <h6>{name}</h6>
       <select
         name="amount"
         id="amount"
@@ -33,9 +32,14 @@ export default function CardProductCart({ id, name, images, amount, total }) {
           </option>
         ))}
       </select>
-
-      <footer>{total}</footer>
-      <AiFillDelete />
+      <Link to={`${product}/${id}`}>
+        <img src={images[0].url} alt="" />
+      </Link>
+      <div className="name-price">
+        <h6 className="name-product">{name}</h6>
+        <span>$ {total}</span>
+      </div>
+      <AiFillDelete onClick={handleOnClickDeleteCart} />
     </CardProductCartSc>
   );
 }

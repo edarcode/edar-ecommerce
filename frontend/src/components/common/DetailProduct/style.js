@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { bgBox, bgNavbar } from "../../../consts/colors";
+import { bgBox } from "../../../consts/colors";
 import { gridCenter } from "../../../styles/gridCenter";
 import { scrollStyles } from "../../../styles/scrollStyles";
+import { selectStyles } from "../../../styles/selectStyles";
 
 export const DetailProductSc = styled.article`
   width: 300px;
@@ -38,15 +39,7 @@ export const DetailProductSc = styled.article`
     width: 100%;
     grid-template-columns: 1fr auto;
     select {
-      cursor: pointer;
-      background: transparent;
-      border: none;
-      color: inherit;
-      padding: 10px;
-      margin-left: 7px;
-    }
-    select:focus {
-      outline: 2px solid ${bgNavbar};
+      ${selectStyles};
     }
   }
 `;
