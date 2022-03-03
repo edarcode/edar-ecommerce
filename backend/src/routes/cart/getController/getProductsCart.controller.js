@@ -25,7 +25,7 @@ const getCart = async (req, res, next) => {
             },
           ],
         });
-        const { id, name, price, stock, discount } = product;
+        const { id, name, price, stock, discount, images } = product;
         product &&
           cartProducts.push({
             id,
@@ -34,6 +34,7 @@ const getCart = async (req, res, next) => {
             stock,
             discount,
             amount,
+            images,
             total: product["price"] * amount,
           });
       }

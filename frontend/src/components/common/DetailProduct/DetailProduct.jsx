@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Button } from "../Button/Button";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/reducers/cart/actions";
+import { useNavigate } from "react-router-dom";
+import { cart } from "../../../consts/pathRoutes";
 
 export default function DetailProduct({
   id,
@@ -14,6 +16,7 @@ export default function DetailProduct({
   className,
 }) {
   const dispatch = useDispatch();
+  const navigateToCart = useNavigate();
   const [amount, setAmount] = useState(1);
   const handleOnChangeAmount = (e) => {
     const amount = parseInt(e.target.value);
@@ -22,6 +25,7 @@ export default function DetailProduct({
 
   const handleOnClickAddToCart = () => {
     dispatch(addToCart({ [id]: amount }));
+    navigateToCart(cart);
   };
   return (
     <DetailProductSc className={className}>

@@ -28,9 +28,11 @@ import { useInitStorage } from "./components/hooks/useInitStorage";
 import Account from "./components/client/Account/Account";
 import AuthClient from "./components/auth/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
+import { useInitCartStorage } from "./components/hooks/useInitCartStorage";
 
 function App() {
   useInitStorage();
+  useInitCartStorage();
   return (
     <AppSc className="App">
       <Routes>
