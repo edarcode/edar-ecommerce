@@ -1,4 +1,11 @@
-import { ADD_TO_CART, SET_CART, SET_CART_PRODUCTS } from "./const";
+import { setCartLocalStorage } from "../../../utils/setCartLocalStorage";
+import {
+  ADD_TO_CART,
+  DELETE_CART,
+  SET_CART,
+  SET_CART_PRODUCTS,
+  UPDATE_CART,
+} from "./const";
 
 const initialState = {
   cart: {},
@@ -10,11 +17,29 @@ export const cart = (state = initialState, { type, payload }) => {
     if (name) return { ...state, [name]: payload };
     return initialState;
   };
-  const pushState = (name) => {
-    if (name) return { ...state, [name]: { ...state[name], ...payload } };
-  };
   const cases = {
-    [ADD_TO_CART]: () => pushState("cart"),
+    [ADD_TO_CART]: () => {
+      const newCart = { ...state, cart: { ...state.cart, ...payload } };
+      setCartLocalStorage(newCart.cart);
+      return newCart;
+    },
+    [UPDATE_CART]: () => {
+      const { id, amount } = payload;
+      const newCart = { ...state, cart: { ...state.cart, [id]: amount } };
+      setCartLocalStorage(newCart.cart);
+      return newCart;
+    },
+    [DELETE_CART]: () => {
+      const newCart = {};
+      for (const key in state.cart) {
+        if (Object.hasOwnProperty.call(state.cart, key)) {
+          const value = state.cart[key];
+          if (parseInt(key) !== payload) newCart[key] = value;
+        }
+      }
+      setCartLocalStorage(newCart);
+      return { ...state, cart: newCart };
+    },
     [SET_CART_PRODUCTS]: () => setState("cartProducts"),
     [SET_CART]: () => setState("cart"),
   };

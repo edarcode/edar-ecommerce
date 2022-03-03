@@ -1,34 +1,26 @@
 import { action } from "../../../utils/action";
 import { axiosGet } from "../../../utils/axios";
-import { ADD_TO_CART, SET_CART, SET_CART_PRODUCTS } from "./const";
+import {
+  ADD_TO_CART,
+  UPDATE_CART,
+  SET_CART_PRODUCTS,
+  DELETE_CART,
+} from "./const";
 
 export const addToCart = (product) => {
   //product debe ser un objeto con key = id del producto y value la cantidad
   return (dispatch) => {
-    const cartLocalStorage = localStorage.getItem("cart");
-    if (cartLocalStorage) {
-      const cart = JSON.parse(cartLocalStorage);
-      const newCart = { ...cart, ...product };
-      const newLocalStorage = JSON.stringify(newCart);
-      localStorage.setItem("cart", newLocalStorage);
-    } else {
-      const strProduct = JSON.stringify(product);
-      localStorage.setItem("cart", strProduct);
-    }
     dispatch(action(ADD_TO_CART, product));
   };
 };
-export const updateCart = ({ id, amount }) => {
-  console.log(id, amount);
+export const updateCart = (product) => {
   return (dispatch) => {
-    const cartLocalStorage = localStorage.getItem("cart");
-    if (cartLocalStorage) {
-      const cart = JSON.parse(cartLocalStorage);
-      cart[id] = amount;
-      const newLocalStorage = JSON.stringify(cart);
-      localStorage.setItem("cart", newLocalStorage);
-      dispatch(action(SET_CART, cart));
-    }
+    dispatch(action(UPDATE_CART, product));
+  };
+};
+export const deleteCart = ({ id }) => {
+  return (dispatch) => {
+    dispatch(action(DELETE_CART, id));
   };
 };
 export const getCartProducts = ({ cart }) => {

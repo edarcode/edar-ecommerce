@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { updateCart } from "../../../redux/reducers/cart/actions";
+import { deleteCart, updateCart } from "../../../redux/reducers/cart/actions";
 import { generatorArray } from "../../../utils/generatorArray";
 import { CardProductCartSc } from "./style";
 import { Link } from "react-router-dom";
@@ -12,6 +12,9 @@ export default function CardProductCart({ id, name, images, amount, total }) {
   const handleOnChangeAmount = (e) => {
     const amount = parseInt(e.target.value);
     dispatch(updateCart({ id, amount }));
+  };
+  const handleOnClickDeleteCart = (e) => {
+    dispatch(deleteCart({ id }));
   };
 
   if (!id) return null;
@@ -35,7 +38,7 @@ export default function CardProductCart({ id, name, images, amount, total }) {
       </select>
 
       <footer>{total}</footer>
-      <AiFillDelete />
+      <AiFillDelete onClick={handleOnClickDeleteCart} />
     </CardProductCartSc>
   );
 }
