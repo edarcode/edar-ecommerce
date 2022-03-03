@@ -20,10 +20,6 @@ export default function CardProductCart({ id, name, images, amount, total }) {
   if (!id) return null;
   return (
     <CardProductCartSc>
-      <Link to={`${product}/${id}`}>
-        <img src={images[0].url} alt="" />
-      </Link>
-      <h6>{name}</h6>
       <select
         name="amount"
         id="amount"
@@ -36,8 +32,13 @@ export default function CardProductCart({ id, name, images, amount, total }) {
           </option>
         ))}
       </select>
-
-      <footer>{total}</footer>
+      <Link to={`${product}/${id}`}>
+        <img src={images[0].url} alt="" />
+      </Link>
+      <div className="name-price">
+        <h6 className="name-product">{name}</h6>
+        <span>$ {total}</span>
+      </div>
       <AiFillDelete onClick={handleOnClickDeleteCart} />
     </CardProductCartSc>
   );
