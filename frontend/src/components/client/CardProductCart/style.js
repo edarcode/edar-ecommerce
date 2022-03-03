@@ -23,6 +23,7 @@ export const CardProductCartSc = styled.article`
   svg {
     width: 25px;
     margin-left: auto;
+    cursor: pointer;
   }
   .name-price {
     ${gridCenter};

@@ -6,9 +6,10 @@ import { Navigate } from "react-router-dom";
 import { store } from "../../consts/pathRoutes";
 
 export default function Cart() {
-  const { cartProducts } = useSelector((state) => state.cart);
+  const { cart, cartProducts } = useSelector((state) => state.cart);
 
-  if (!cartProducts.length) return <Navigate to={store} />;
+  if (!Object.keys(cart).length) return <Navigate to={store} />;
+  if (!cartProducts.length) return null;
   return (
     <CartSc>
       <section className="cart-products">
