@@ -1,4 +1,5 @@
 const { Bill, Product } = require("../../../db");
+const { sendBill } = require("../../../utils/sendBill");
 
 const createBill = async (req, res, next) => {
   const user = req.user;
@@ -21,6 +22,12 @@ const createBill = async (req, res, next) => {
       const price = product.price;
       await bill.addProduct(id, { through: { amount, price } });
     }
+    await sendBill({
+      user,
+      idBill: bill.id,
+      details,
+      createdAt: bill.createdAt,
+    });
     res.json({ msg: "Pago realizado, la factura fue enviada a su correo" });
   } catch (error) {
     next(error);
