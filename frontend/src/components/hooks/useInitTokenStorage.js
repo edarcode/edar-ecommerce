@@ -4,7 +4,7 @@ import { SET_EMAIL, SET_TOKEN } from "../../redux/reducers/storage/const";
 import { action } from "../../utils/action";
 import { isTokenAuthorized } from "../../utils/isTokenAuthorized";
 
-export const useInitStorage = () => {
+export const useInitTokenStorage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     const initStorage = async () => {

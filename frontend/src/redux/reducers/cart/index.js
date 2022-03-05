@@ -1,20 +1,29 @@
+import { removeCartStorage } from "../../../utils/removeCartStorage";
 import { setCartLocalStorage } from "../../../utils/setCartLocalStorage";
 import {
   ADD_TO_CART,
+  CLEAR_CART,
   DELETE_CART,
+  SET_ADDRESS,
   SET_CART,
   SET_CART_PRODUCTS,
+  SET_RES_BUY_CART,
+  SET_TELL,
   UPDATE_CART,
 } from "./const";
 
 const initialState = {
   cart: {},
   cartProducts: [],
+  address: "",
+  tell: "",
+  resBuyCart: {},
 };
 
 export const cart = (state = initialState, { type, payload }) => {
   const setState = (name) => {
     if (name) return { ...state, [name]: payload };
+    removeCartStorage();
     return initialState;
   };
   const cases = {
@@ -42,6 +51,10 @@ export const cart = (state = initialState, { type, payload }) => {
     },
     [SET_CART_PRODUCTS]: () => setState("cartProducts"),
     [SET_CART]: () => setState("cart"),
+    [SET_ADDRESS]: () => setState("address"),
+    [SET_TELL]: () => setState("tell"),
+    [SET_RES_BUY_CART]: () => setState("resBuyCart"),
+    [CLEAR_CART]: () => setState(),
   };
   return (cases[type] && cases[type]()) || state;
 };
