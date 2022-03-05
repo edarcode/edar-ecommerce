@@ -31,12 +31,19 @@ export const getCartProducts = ({ cart }) => {
     dispatch(action(SET_CART_PRODUCTS, cartProducts));
   };
 };
-export const buyCart = ({ address, tell, details, paymentMethod }) => {
+export const buyCart = ({
+  address,
+  tell,
+  details,
+  paymentMethod,
+  setIsLoading,
+}) => {
   return async (dispatch) => {
     const resBuyCart = await axiosPost({
       url: "bills",
       data: { address, tell, details, paymentMethod },
     });
+    setIsLoading(false);
     dispatch(action(SET_RES_BUY_CART, resBuyCart));
   };
 };

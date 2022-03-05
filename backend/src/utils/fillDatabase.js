@@ -57,7 +57,7 @@ module.exports = {
     }
   },
   loadMockBills: async function () {
-    try {
+    /* try {
       for (let i = 0; i < bills.length; i++) {
         const data = bills[i];
         await axiosPost({
@@ -67,6 +67,6 @@ module.exports = {
       }
     } catch (error) {
       console.log(error);
-    }
+    } */
   },
 };

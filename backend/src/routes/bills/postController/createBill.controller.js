@@ -3,8 +3,16 @@ const { Bill, Product } = require("../../../db");
 const createBill = async (req, res, next) => {
   const user = req.user;
   try {
-    const { address, details } = req.body;
-    const bill = await Bill.create({ address });
+    const { address, details, tell } = req.body;
+    if (!user.tell) {
+      user.tell = tell;
+      user.save();
+    }
+    if (!user.address) {
+      user.address = address;
+      user.save();
+    }
+    const bill = await Bill.create({ address, tell });
     await bill.setUser(user.id);
     for (let i = 0; i < details.length; i++) {
       const item = details[i];

@@ -12,5 +12,9 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    tell: {
+      type: DataTypes.BIGINT,
+      allowNull: false,
+    },
   });
 };

@@ -27,5 +27,11 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    address: {
+      type: DataTypes.STRING,
+    },
+    tell: {
+      type: DataTypes.BIGINT,
+    },
   });
 };
