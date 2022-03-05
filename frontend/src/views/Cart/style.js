@@ -15,7 +15,7 @@ export const CartSc = styled.main`
     margin-right: auto;
     justify-self: end;
     align-self: start;
-    button {
+    a {
       justify-self: end;
     }
   }

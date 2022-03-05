@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import CardProductCart from "../../components/client/CardProductCart/CardProductCart";
 import { Button } from "../../components/common/Button/Button";
 import { Navigate } from "react-router-dom";
-import { store } from "../../consts/pathRoutes";
+import { buy, store } from "../../consts/pathRoutes";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const { cart, cartProducts } = useSelector((state) => state.cart);
@@ -21,7 +22,9 @@ export default function Cart() {
           <span>
             Total $ {cartProducts.reduce((acc, item) => acc + item.total, 0)}
           </span>
-          <Button>Comprar</Button>
+          <Link to={buy}>
+            <Button>Comprar</Button>
+          </Link>
         </div>
       </section>
     </CartSc>

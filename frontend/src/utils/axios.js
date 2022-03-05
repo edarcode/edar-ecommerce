@@ -3,6 +3,9 @@ import axios from "axios";
 const instanceAxiosPost = axios.create({
   baseURL: process.env.REACT_APP_BACKEND,
   method: "POST",
+  headers: {
+    token: localStorage.getItem("token"),
+  },
 });
 const instanceAxiosGet = axios.create({
   baseURL: process.env.REACT_APP_BACKEND,

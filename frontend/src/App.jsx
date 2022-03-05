@@ -23,15 +23,17 @@ import {
   register,
   account,
   resetPassword,
+  buy,
 } from "./consts/pathRoutes";
-import { useInitStorage } from "./components/hooks/useInitStorage";
+import { useInitTokenStorage } from "./components/hooks/useInitTokenStorage";
 import Account from "./components/client/Account/Account";
 import AuthClient from "./components/auth/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
 import { useInitCartStorage } from "./components/hooks/useInitCartStorage";
+import Buy from "./views/Buy/Buy";
 
 function App() {
-  useInitStorage();
+  useInitTokenStorage();
   useInitCartStorage();
   return (
     <AppSc className="App">
@@ -55,6 +57,14 @@ function App() {
           <Route path={register} element={<Register />} />
           <Route path={`${product}/:id`} element={<Product />} />
           <Route path={`${resetPassword}/:token`} element={<ResetPassword />} />
+          <Route
+            path={buy}
+            element={
+              <AuthClient>
+                <Buy />
+              </AuthClient>
+            }
+          />
         </Route>
         {/* ------------------ADMIN------------------------------ */}
         <Route path="/admin" element={<Admin />}>

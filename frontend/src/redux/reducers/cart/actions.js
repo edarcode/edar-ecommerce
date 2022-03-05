@@ -1,10 +1,11 @@
 import { action } from "../../../utils/action";
-import { axiosGet } from "../../../utils/axios";
+import { axiosGet, axiosPost } from "../../../utils/axios";
 import {
   ADD_TO_CART,
   UPDATE_CART,
   SET_CART_PRODUCTS,
   DELETE_CART,
+  SET_RES_BUY_CART,
 } from "./const";
 
 export const addToCart = (product) => {
@@ -28,5 +29,14 @@ export const getCartProducts = ({ cart }) => {
   return async (dispatch) => {
     const cartProducts = await axiosGet({ url: `/cart?cart=${strCart}` });
     dispatch(action(SET_CART_PRODUCTS, cartProducts));
+  };
+};
+export const buyCart = ({ address, tell, details, paymentMethod }) => {
+  return async (dispatch) => {
+    const resBuyCart = await axiosPost({
+      url: "bills",
+      data: { address, tell, details, paymentMethod },
+    });
+    dispatch(action(SET_RES_BUY_CART, resBuyCart));
   };
 };
