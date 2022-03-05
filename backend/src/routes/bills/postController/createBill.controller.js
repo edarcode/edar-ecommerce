@@ -2,7 +2,6 @@ const { Bill, Product } = require("../../../db");
 
 const createBill = async (req, res, next) => {
   const user = req.user;
-  const payment = req.payment;
   try {
     const { address, details } = req.body;
     const bill = await Bill.create({ address });
@@ -14,8 +13,7 @@ const createBill = async (req, res, next) => {
       const price = product.price;
       await bill.addProduct(id, { through: { amount, price } });
     }
-    console.log(payment);
-    res.json({ msg: "Created successfully", billId: bill.id });
+    res.json({ msg: "Pago realizado, la factura fue enviada a su correo" });
   } catch (error) {
     next(error);
   }

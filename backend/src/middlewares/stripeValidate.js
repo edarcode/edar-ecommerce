@@ -1,24 +1,24 @@
+require("dotenv").config();
 const Stripe = require("stripe");
+const { SECRET_STRIPE } = process.env;
 
-const stripe = new Stripe(
-  "sk_test_51KZTycDEat7IUYBbexkqyVFomY52YtMhLuuXzxTaI50GZ8JQ6VRLQSXntlGtvANqpwIcNzBVijgA1lze0ioXW82m005FWoD6G6"
-);
+const stripe = new Stripe(SECRET_STRIPE);
 
 module.exports = {
   stripeValidate: async (req, res, next) => {
     try {
-      const { paymentMethod } = req.body;
+      const { paymentMethod, details } = req.body;
+      const totalCart = details.reduce((acc, item) => acc + item.total, 0);
       const payment = await stripe.paymentIntents.create({
-        amount: 1,
+        amount: totalCart * 100,
         currency: "USD",
         description: "",
         payment_method: paymentMethod.id,
         confirm: true,
       });
-      req.payment = payment;
       next();
     } catch (error) {
-      res.json({ msg: "Unauthorized" });
+      res.json({ msg: error.raw.message });
     }
   },
 };
