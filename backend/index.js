@@ -29,7 +29,7 @@ const {
 const PORT = process.env.PORT;
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
+conn.sync({ force: false }).then(() => {
   server.listen(PORT, async () => {
     await loadMockCategories();
     await loadMockSuppliers();
