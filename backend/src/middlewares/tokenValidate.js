@@ -6,10 +6,8 @@ module.exports = {
   tokenValidate: async (req, res, next) => {
     try {
       const { token } = req.headers;
-      console.log("token", token);
       if (!token) return res.json({ msg: "No token provided" });
       const { id } = jwt.verify(token, SECRET); //lanza err si no es valido
-      console.log("secret", SECRET);
       const user = await User.findByPk(id);
       if (!user) return res.json({ msg: "Unauthorized" });
       req.user = user;
