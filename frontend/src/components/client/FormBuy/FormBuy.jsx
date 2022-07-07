@@ -1,6 +1,8 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { store } from "../../../consts/pathRoutes";
 import { buyCart } from "../../../redux/reducers/cart/actions";
 import {
   CLEAR_CART,
@@ -15,8 +17,6 @@ import Alert from "../../pop-ups/Alert/Alert";
 import { inputTell, inputText } from "./props";
 import { FormBuySc } from "./style";
 import { validateFormBuy } from "./validateFormBuy";
-import { useNavigate } from "react-router-dom";
-import { store } from "../../../consts/pathRoutes";
 
 const CARD_OPTIONS = {
   iconStyle: "solid",
@@ -49,8 +49,8 @@ export default function FormBuy() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setErr(validateFormBuy({ address }));
-  }, [address]);
+    setErr(validateFormBuy({ address, tell }));
+  }, [address, tell]);
 
   const handleOnSubmitBuy = async (e) => {
     e.preventDefault();

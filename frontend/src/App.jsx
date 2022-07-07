@@ -1,36 +1,34 @@
+import { Route, Routes } from "react-router-dom";
 import { AppSc } from "./AppSc";
-import { Routes, Route } from "react-router-dom";
-import Home from "./views/Home/Home";
+import AuthClient from "./components/auth/AuthClient/AuthClient";
+import Account from "./components/client/Account/Account";
+import { useInitCartStorage } from "./components/hooks/useInitCartStorage";
+import { useInitTokenStorage } from "./components/hooks/useInitTokenStorage";
+import {
+  account,
+  buy,
+  cart,
+  contact,
+  dashboard,
+  home,
+  login,
+  product,
+  register,
+  resetPassword,
+  store,
+} from "./consts/pathRoutes";
+import Admin from "./views/Admin/Admin";
+import Buy from "./views/Buy/Buy";
 import Cart from "./views/Cart/Cart";
-import Catalogue from "./views/Catalogue/Catalogue";
+import Client from "./views/Client/Client";
 import Contact from "./views/Contact/Contact";
 import Dashboard from "./views/Dashboard/Dashboard";
-import Product from "./views/Product/Product";
+import Home from "./views/Home/Home";
 import Login from "./views/Login/Login";
-import Store from "./views/Store/Store";
-import Client from "./views/Client/Client";
-import Admin from "./views/Admin/Admin";
+import Product from "./views/Product/Product";
 import Register from "./views/Register/Register";
-import {
-  home,
-  cart,
-  catalogue,
-  contact,
-  login,
-  store,
-  product,
-  dashboard,
-  register,
-  account,
-  resetPassword,
-  buy,
-} from "./consts/pathRoutes";
-import { useInitTokenStorage } from "./components/hooks/useInitTokenStorage";
-import Account from "./components/client/Account/Account";
-import AuthClient from "./components/auth/AuthClient/AuthClient";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
-import { useInitCartStorage } from "./components/hooks/useInitCartStorage";
-import Buy from "./views/Buy/Buy";
+import Store from "./views/Store/Store";
 
 function App() {
   useInitTokenStorage();
@@ -42,7 +40,6 @@ function App() {
         <Route path={home} element={<Client />}>
           <Route index element={<Home />} />
           <Route path={store} element={<Store />} />
-          <Route path={catalogue} element={<Catalogue />} />
           <Route path={contact} element={<Contact />} />
           <Route path={login} element={<Login />} />
           <Route
