@@ -1,17 +1,16 @@
-import Li from "../../common/Li/Li";
-import { NavSc } from "./style";
-import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineLogin } from "react-icons/ai";
+import { CgShoppingCart } from "react-icons/cg";
 import { useSelector } from "react-redux";
 import {
+  account,
   cart,
-  catalogue,
   contact,
   home,
   login,
-  account,
   store,
 } from "../../../consts/pathRoutes";
+import Li from "../../common/Li/Li";
+import { NavSc } from "./style";
 
 export default function Nav({ className, setIsTrue }) {
   const { email } = useSelector((state) => state.storage);
@@ -20,11 +19,6 @@ export default function Nav({ className, setIsTrue }) {
       <ul>
         <Li to={home} text={"Inicio"} onClick={() => setIsTrue(false)} />
         <Li to={store} text={"Tienda"} onClick={() => setIsTrue(false)} />
-        <Li
-          to={catalogue}
-          text={"Lista de partes"}
-          onClick={() => setIsTrue(false)}
-        />
         <Li to={contact} text={"Contacto"} onClick={() => setIsTrue(false)} />
         <Li
           to={(email && account) || login}

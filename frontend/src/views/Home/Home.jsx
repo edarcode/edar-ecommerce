@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <HomeSc>
       <h1>
-        Hola! navega en nuestra App, registro y login. <br /> Dale click en
-        tienta, filtra, ordena y encuentra tu producto favorito. <br />
-        Agrega al carrito y compra :v
+        "Lista y filtra productos, puede detallarlos, loguearse (requiere
+        verificarse), reset password, agg productos al carrito o sacarlos y
+        comprar (stripe)" :v
         <br />
       </h1>
     </HomeSc>
